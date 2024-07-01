@@ -1,0 +1,218 @@
+#pragma once
+namespace Utilities
+{
+	union CReverseNodeUnion
+	{
+		void* ptrToDelete = nullptr;
+		CReverseNode<unsigned char, unsigned char>* CPPcreversenode1;
+		CReverseNode<unsigned char, char>* CPPcreversenode2;
+		CReverseNode<unsigned char, short>* CPPcreversenode3;
+		CReverseNode<unsigned char, unsigned short>* CPPcreversenode4;
+		CReverseNode<unsigned char, int>* CPPcreversenode5;
+		CReverseNode<unsigned char, unsigned int>* CPPcreversenode6;
+		CReverseNode<unsigned char, long long>* CPPcreversenode7;
+		CReverseNode<unsigned char, unsigned long long>* CPPcreversenode8;
+		CReverseNode<unsigned char, float>* CPPcreversenode9;
+		CReverseNode<unsigned char, double>* CPPcreversenode10;
+		CReverseNode<unsigned char, wchar_t>* CPPcreversenode11;
+		CReverseNode<unsigned char, bool>* CPPcreversenode12;
+		CReverseNode<unsigned char, std::wstring>* CPPcreversenode13;
+		CReverseNode<unsigned char, __int64>* CPPcreversenode14;
+
+		CReverseNode<char, unsigned char>* CPPcreversenode15;
+		CReverseNode<char, char>* CPPcreversenode16;
+		CReverseNode<char, short>* CPPcreversenode17;
+		CReverseNode<char, unsigned short>* CPPcreversenode18;
+		CReverseNode<char, int>* CPPcreversenode19;
+		CReverseNode<char, unsigned int>* CPPcreversenode20;
+		CReverseNode<char, long long>* CPPcreversenode21;
+		CReverseNode<char, unsigned long long>* CPPcreversenode22;
+		CReverseNode<char, float>* CPPcreversenode23;
+		CReverseNode<char, double>* CPPcreversenode24;
+		CReverseNode<char, wchar_t>* CPPcreversenode25;
+		CReverseNode<char, bool>* CPPcreversenode26;
+		CReverseNode<char, std::wstring>* CPPcreversenode27;
+		CReverseNode<char, __int64>* CPPcreversenode28;
+
+		CReverseNode<short, unsigned char>* CPPcreversenode29;
+		CReverseNode<short, char>* CPPcreversenode30;
+		CReverseNode<short, short>* CPPcreversenode31;
+		CReverseNode<short, unsigned short>* CPPcreversenode32;
+		CReverseNode<short, int>* CPPcreversenode33;
+		CReverseNode<short, unsigned int>* CPPcreversenode34;
+		CReverseNode<short, long long>* CPPcreversenode35;
+		CReverseNode<short, unsigned long long>* CPPcreversenode36;
+		CReverseNode<short, float>* CPPcreversenode37;
+		CReverseNode<short, double>* CPPcreversenode38;
+		CReverseNode<short, wchar_t>* CPPcreversenode39;
+		CReverseNode<short, bool>* CPPcreversenode40;
+		CReverseNode<short, std::wstring>* CPPcreversenode41;
+		CReverseNode<short, __int64>* CPPcreversenode42;
+
+		CReverseNode<unsigned short, unsigned char>* CPPcreversenode43;
+		CReverseNode<unsigned short, char>* CPPcreversenode44;
+		CReverseNode<unsigned short, short>* CPPcreversenode45;
+		CReverseNode<unsigned short, unsigned short>* CPPcreversenode46;
+		CReverseNode<unsigned short, int>* CPPcreversenode47;
+		CReverseNode<unsigned short, unsigned int>* CPPcreversenode48;
+		CReverseNode<unsigned short, long long>* CPPcreversenode49;
+		CReverseNode<unsigned short, unsigned long long>* CPPcreversenode50;
+		CReverseNode<unsigned short, float>* CPPcreversenode51;
+		CReverseNode<unsigned short, double>* CPPcreversenode52;
+		CReverseNode<unsigned short, wchar_t>* CPPcreversenode53;
+		CReverseNode<unsigned short, bool>* CPPcreversenode54;
+		CReverseNode<unsigned short, std::wstring>* CPPcreversenode55;
+		CReverseNode<unsigned short, __int64>* CPPcreversenode56;
+
+		CReverseNode<int, unsigned char>* CPPcreversenode57;
+		CReverseNode<int, char>* CPPcreversenode58;
+		CReverseNode<int, short>* CPPcreversenode59;
+		CReverseNode<int, unsigned short>* CPPcreversenode60;
+		CReverseNode<int, int>* CPPcreversenode61;
+		CReverseNode<int, unsigned int>* CPPcreversenode62;
+		CReverseNode<int, long long>* CPPcreversenode63;
+		CReverseNode<int, unsigned long long>* CPPcreversenode64;
+		CReverseNode<int, float>* CPPcreversenode65;
+		CReverseNode<int, double>* CPPcreversenode66;
+		CReverseNode<int, wchar_t>* CPPcreversenode67;
+		CReverseNode<int, bool>* CPPcreversenode68;
+		CReverseNode<int, std::wstring>* CPPcreversenode69;
+		CReverseNode<int, __int64>* CPPcreversenode70;
+
+		CReverseNode<unsigned int, unsigned char>* CPPcreversenode71;
+		CReverseNode<unsigned int, char>* CPPcreversenode72;
+		CReverseNode<unsigned int, short>* CPPcreversenode73;
+		CReverseNode<unsigned int, unsigned short>* CPPcreversenode74;
+		CReverseNode<unsigned int, int>* CPPcreversenode75;
+		CReverseNode<unsigned int, unsigned int>* CPPcreversenode76;
+		CReverseNode<unsigned int, long long>* CPPcreversenode77;
+		CReverseNode<unsigned int, unsigned long long>* CPPcreversenode78;
+		CReverseNode<unsigned int, float>* CPPcreversenode79;
+		CReverseNode<unsigned int, double>* CPPcreversenode80;
+		CReverseNode<unsigned int, wchar_t>* CPPcreversenode81;
+		CReverseNode<unsigned int, bool>* CPPcreversenode82;
+		CReverseNode<unsigned int, std::wstring>* CPPcreversenode83;
+		CReverseNode<unsigned int, __int64>* CPPcreversenode84;
+
+		CReverseNode<long long, unsigned char>* CPPcreversenode85;
+		CReverseNode<long long, char>* CPPcreversenode86;
+		CReverseNode<long long, short>* CPPcreversenode87;
+		CReverseNode<long long, unsigned short>* CPPcreversenode88;
+		CReverseNode<long long, int>* CPPcreversenode89;
+		CReverseNode<long long, unsigned int>* CPPcreversenode90;
+		CReverseNode<long long, long long>* CPPcreversenode91;
+		CReverseNode<long long, unsigned long long>* CPPcreversenode92;
+		CReverseNode<long long, float>* CPPcreversenode93;
+		CReverseNode<long long, double>* CPPcreversenode94;
+		CReverseNode<long long, wchar_t>* CPPcreversenode95;
+		CReverseNode<long long, bool>* CPPcreversenode96;
+		CReverseNode<long long, std::wstring>* CPPcreversenode97;
+		CReverseNode<long long, __int64>* CPPcreversenode98;
+
+		CReverseNode<unsigned long long, unsigned char>* CPPcreversenode99;
+		CReverseNode<unsigned long long, char>* CPPcreversenode100;
+		CReverseNode<unsigned long long, short>* CPPcreversenode101;
+		CReverseNode<unsigned long long, unsigned short>* CPPcreversenode102;
+		CReverseNode<unsigned long long, int>* CPPcreversenode103;
+		CReverseNode<unsigned long long, unsigned int>* CPPcreversenode104;
+		CReverseNode<unsigned long long, long long>* CPPcreversenode105;
+		CReverseNode<unsigned long long, unsigned long long>* CPPcreversenode106;
+		CReverseNode<unsigned long long, float>* CPPcreversenode107;
+		CReverseNode<unsigned long long, double>* CPPcreversenode108;
+		CReverseNode<unsigned long long, wchar_t>* CPPcreversenode109;
+		CReverseNode<unsigned long long, bool>* CPPcreversenode110;
+		CReverseNode<unsigned long long, std::wstring>* CPPcreversenode111;
+		CReverseNode<unsigned long long, __int64>* CPPcreversenode112;
+
+		CReverseNode<float, unsigned char>* CPPcreversenode113;
+		CReverseNode<float, char>* CPPcreversenode114;
+		CReverseNode<float, short>* CPPcreversenode115;
+		CReverseNode<float, unsigned short>* CPPcreversenode116;
+		CReverseNode<float, int>* CPPcreversenode117;
+		CReverseNode<float, unsigned int>* CPPcreversenode118;
+		CReverseNode<float, long long>* CPPcreversenode119;
+		CReverseNode<float, unsigned long long>* CPPcreversenode120;
+		CReverseNode<float, float>* CPPcreversenode121;
+		CReverseNode<float, double>* CPPcreversenode122;
+		CReverseNode<float, wchar_t>* CPPcreversenode123;
+		CReverseNode<float, bool>* CPPcreversenode124;
+		CReverseNode<float, std::wstring>* CPPcreversenode125;
+		CReverseNode<float, __int64>* CPPcreversenode126;
+
+		CReverseNode<double, unsigned char>* CPPcreversenode127;
+		CReverseNode<double, char>* CPPcreversenode128;
+		CReverseNode<double, short>* CPPcreversenode129;
+		CReverseNode<double, unsigned short>* CPPcreversenode130;
+		CReverseNode<double, int>* CPPcreversenode131;
+		CReverseNode<double, unsigned int>* CPPcreversenode132;
+		CReverseNode<double, long long>* CPPcreversenode133;
+		CReverseNode<double, unsigned long long>* CPPcreversenode134;
+		CReverseNode<double, float>* CPPcreversenode135;
+		CReverseNode<double, double>* CPPcreversenode136;
+		CReverseNode<double, wchar_t>* CPPcreversenode137;
+		CReverseNode<double, bool>* CPPcreversenode138;
+		CReverseNode<double, std::wstring>* CPPcreversenode139;
+		CReverseNode<double, __int64>* CPPcreversenode140;
+
+		CReverseNode<wchar_t, unsigned char>* CPPcreversenode141;
+		CReverseNode<wchar_t, char>* CPPcreversenode142;
+		CReverseNode<wchar_t, short>* CPPcreversenode143;
+		CReverseNode<wchar_t, unsigned short>* CPPcreversenode144;
+		CReverseNode<wchar_t, int>* CPPcreversenode145;
+		CReverseNode<wchar_t, unsigned int>* CPPcreversenode146;
+		CReverseNode<wchar_t, long long>* CPPcreversenode147;
+		CReverseNode<wchar_t, unsigned long long>* CPPcreversenode148;
+		CReverseNode<wchar_t, float>* CPPcreversenode149;
+		CReverseNode<wchar_t, double>* CPPcreversenode150;
+		CReverseNode<wchar_t, wchar_t>* CPPcreversenode151;
+		CReverseNode<wchar_t, bool>* CPPcreversenode152;
+		CReverseNode<wchar_t, std::wstring>* CPPcreversenode153;
+		CReverseNode<wchar_t, __int64>* CPPcreversenode154;
+
+		CReverseNode<bool, unsigned char>* CPPcreversenode155;
+		CReverseNode<bool, char>* CPPcreversenode156;
+		CReverseNode<bool, short>* CPPcreversenode157;
+		CReverseNode<bool, unsigned short>* CPPcreversenode158;
+		CReverseNode<bool, int>* CPPcreversenode159;
+		CReverseNode<bool, unsigned int>* CPPcreversenode160;
+		CReverseNode<bool, long long>* CPPcreversenode161;
+		CReverseNode<bool, unsigned long long>* CPPcreversenode162;
+		CReverseNode<bool, float>* CPPcreversenode163;
+		CReverseNode<bool, double>* CPPcreversenode164;
+		CReverseNode<bool, wchar_t>* CPPcreversenode165;
+		CReverseNode<bool, bool>* CPPcreversenode166;
+		CReverseNode<bool, std::wstring>* CPPcreversenode167;
+		CReverseNode<bool, __int64>* CPPcreversenode168;
+
+		CReverseNode<std::wstring, unsigned char>* CPPcreversenode169;
+		CReverseNode<std::wstring, char>* CPPcreversenode170;
+		CReverseNode<std::wstring, short>* CPPcreversenode171;
+		CReverseNode<std::wstring, unsigned short>* CPPcreversenode172;
+		CReverseNode<std::wstring, int>* CPPcreversenode173;
+		CReverseNode<std::wstring, unsigned int>* CPPcreversenode174;
+		CReverseNode<std::wstring, long long>* CPPcreversenode175;
+		CReverseNode<std::wstring, unsigned long long>* CPPcreversenode176;
+		CReverseNode<std::wstring, float>* CPPcreversenode177;
+		CReverseNode<std::wstring, double>* CPPcreversenode178;
+		CReverseNode<std::wstring, wchar_t>* CPPcreversenode179;
+		CReverseNode<std::wstring, bool>* CPPcreversenode180;
+		CReverseNode<std::wstring, std::wstring>* CPPcreversenode181;
+		CReverseNode<std::wstring, __int64>* CPPcreversenode182;
+
+		CReverseNode<__int64, unsigned char>* CPPcreversenode183;
+		CReverseNode<__int64, char>* CPPcreversenode184;
+		CReverseNode<__int64, short>* CPPcreversenode185;
+		CReverseNode<__int64, unsigned short>* CPPcreversenode186;
+		CReverseNode<__int64, int>* CPPcreversenode187;
+		CReverseNode<__int64, unsigned int>* CPPcreversenode188;
+		CReverseNode<__int64, long long>* CPPcreversenode189;
+		CReverseNode<__int64, unsigned long long>* CPPcreversenode190;
+		CReverseNode<__int64, float>* CPPcreversenode191;
+		CReverseNode<__int64, double>* CPPcreversenode192;
+		CReverseNode<__int64, wchar_t>* CPPcreversenode193;
+		CReverseNode<__int64, bool>* CPPcreversenode194;
+		CReverseNode<__int64, std::wstring>* CPPcreversenode195;
+		CReverseNode<__int64, __int64>* CPPcreversenode196;
+	};
+}
+
