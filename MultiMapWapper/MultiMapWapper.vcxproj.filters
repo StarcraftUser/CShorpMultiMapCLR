@@ -51,6 +51,9 @@
     <ClCompile Include="ReverseNodeUnion.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="MultiMapBound.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CReverseNodeUnion.h">

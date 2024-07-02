@@ -638,7 +638,16 @@ public:
 	{
 		return multimapObject.Multimap.max_size();
 	}
-
+	virtual [[nodiscard]] MultiNode<Key, Value>& upper_bound(const Key& key)
+	{
+		multiNode.GetNode().iter = multimapObject.Multimap.upper_bound(key);
+		return multiNode;
+	}
+	virtual [[nodiscard]] MultiNode<Key, Value>& lower_bound(const Key& key)
+	{
+		multiNode.GetNode().iter = multimapObject.Multimap.lower_bound(key);
+		return multiNode;
+	}
 	//virtual [[nodiscard]] Value& operator[](int index)
 	//{
 	//	return multimapObject.Multimap[index];

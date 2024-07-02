@@ -220,6 +220,8 @@ namespace MultiMapWapper
 		/*virtual*/ void Swap(CSharpMultiMap<Key, Value>^ OtherCSharpMultiMap);
 		/*virtual*/ System::UInt64 max_size();
 		/*virtual*/ System::Boolean contains(const Key key);
+		/*virtual*/ CShorpMultiNode<Key, Value>^ upper_bound(const Key key);
+		/*virtual*/ CShorpMultiNode<Key, Value>^ lower_bound(const Key key);
 		///*virtual*/ Value operator[](System::Int32 index);
 
 		virtual System::Collections::IEnumerator^ GetEnumerator() sealed = System::Collections::IEnumerable::GetEnumerator

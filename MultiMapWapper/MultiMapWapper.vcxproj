@@ -134,6 +134,7 @@
     <ClCompile Include="CReverseNodeUnion.cpp" />
     <ClCompile Include="CSharpMultiMap.cpp" />
     <ClCompile Include="MultiConstNodeUnion.cpp" />
+    <ClCompile Include="MultiMapBound.cpp" />
     <ClCompile Include="MultiMapContains.cpp" />
     <ClCompile Include="MultiMapMaxSize.cpp" />
     <ClCompile Include="MultiMapSwap.cpp" />
