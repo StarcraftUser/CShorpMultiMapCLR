@@ -136,6 +136,7 @@
     <ClCompile Include="MultiConstNodeUnion.cpp" />
     <ClCompile Include="MultiMapBound.cpp" />
     <ClCompile Include="MultiMapContains.cpp" />
+    <ClCompile Include="MultiMapCopyConstructor.cpp" />
     <ClCompile Include="MultiMapMaxSize.cpp" />
     <ClCompile Include="MultiMapSwap.cpp" />
     <ClCompile Include="MultiMapUnion.cpp" />

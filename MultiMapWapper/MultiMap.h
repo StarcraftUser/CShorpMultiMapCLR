@@ -318,6 +318,11 @@ protected:
 	ReverseNode<Key, Value> RIterNode;
 	//MultiConstNode<Key, Value> multiConstNode;
 public:
+	MultiMap() = default;
+	MultiMap(MultiMap<Key, Value>& other)
+	{
+		multimapObject.Multimap = other.multimapObject.Multimap;
+	}
 	virtual void clear()
 	{
 		multimapObject.Multimap.clear();

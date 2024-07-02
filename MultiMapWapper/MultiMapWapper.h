@@ -187,6 +187,7 @@ namespace MultiMapWapper
 		int nKeyValueType = 0;
 	public :
 		CSharpMultiMap();
+		CSharpMultiMap(CSharpMultiMap<Key, Value>^ other);
 		/*virtual*/ ~CSharpMultiMap();
 		/*virtual*/ void clear();
 		/*virtual*/ CShorpMultiNode<Key, Value>^ emplace(Key key, Value value);
