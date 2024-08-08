@@ -76,12 +76,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap13->clear();
 		break;
 	case 14:
-		if (gValueClassDictionary)
-		{
-			MultiNode<unsigned char, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap14->begin(); iter != multimapUnion->CPPmultimap14->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap14->clear();
 		break;
 	case 15:
@@ -124,12 +118,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap27->clear();
 		break;
 	case 28:
-		if (gValueClassDictionary)
-		{
-			MultiNode<char, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap28->begin(); iter != multimapUnion->CPPmultimap28->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap28->clear();
 		break;
 	case 29:
@@ -172,12 +160,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap41->clear();
 		break;
 	case 42:
-		if (gValueClassDictionary)
-		{
-			MultiNode<short, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap42->begin(); iter != multimapUnion->CPPmultimap42->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap42->clear();
 		break;
 	case 43:
@@ -220,12 +202,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap55->clear();
 		break;
 	case 56:
-		if (gValueClassDictionary)
-		{
-			MultiNode<unsigned short, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap56->begin(); iter != multimapUnion->CPPmultimap56->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap56->clear();
 		break;
 	case 57:
@@ -268,12 +244,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap69->clear();
 		break;
 	case 70:
-		if (gValueClassDictionary)
-		{
-			MultiNode<int, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap70->begin(); iter != multimapUnion->CPPmultimap70->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap70->clear();
 		break;
 	case 71:
@@ -316,12 +286,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap83->clear();
 		break;
 	case 84:
-		if (gValueClassDictionary)
-		{
-			MultiNode<unsigned int, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap84->begin(); iter != multimapUnion->CPPmultimap84->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap84->clear();
 		break;
 	case 85:
@@ -364,12 +328,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap97->clear();
 		break;
 	case 98:
-		if (gValueClassDictionary)
-		{
-			MultiNode<long long, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap98->begin(); iter != multimapUnion->CPPmultimap98->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap98->clear();
 		break;
 	case 99:
@@ -412,12 +370,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap111->clear();
 		break;
 	case 112:
-		if (gValueClassDictionary)
-		{
-			MultiNode<unsigned long long, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap112->begin(); iter != multimapUnion->CPPmultimap112->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap112->clear();
 		break;
 	case 113:
@@ -460,12 +412,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap125->clear();
 		break;
 	case 126:
-		if (gValueClassDictionary)
-		{
-			MultiNode<float, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap126->begin(); iter != multimapUnion->CPPmultimap126->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap126->clear();
 		break;
 	case 127:
@@ -508,12 +454,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap139->clear();
 		break;
 	case 140:
-		if (gValueClassDictionary)
-		{
-			MultiNode<double, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap140->begin(); iter != multimapUnion->CPPmultimap140->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap140->clear();
 		break;
 	case 141:
@@ -556,12 +496,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap153->clear();
 		break;
 	case 154:
-		if (gValueClassDictionary)
-		{
-			MultiNode<wchar_t, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap154->begin(); iter != multimapUnion->CPPmultimap154->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap154->clear();
 		break;
 	case 155:
@@ -604,12 +538,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap167->clear();
 		break;
 	case 168:
-		if (gValueClassDictionary)
-		{
-			MultiNode<bool, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap168->begin(); iter != multimapUnion->CPPmultimap168->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap168->clear();
 		break;
 	case 169:
@@ -652,12 +580,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap181->clear();
 		break;
 	case 182:
-		if (gValueClassDictionary)
-		{
-			MultiNode<std::wstring, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap182->begin(); iter != multimapUnion->CPPmultimap182->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap182->clear();
 		break;
 	case 183:
@@ -700,12 +622,6 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 		multimapUnion->CPPmultimap195->clear();
 		break;
 	case 196:
-		if (gValueClassDictionary)
-		{
-			MultiNode<__int64, __int64> iter;
-			for (iter = multimapUnion->CPPmultimap196->begin(); iter != multimapUnion->CPPmultimap196->end(); iter++)
-				gValueClassDictionary->Remove(iter.GetValue());
-		}
 		multimapUnion->CPPmultimap196->clear();
 		break;
 	}
@@ -716,6 +632,10 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::clear()
 	if (gIntKeyClassDictionary)
 	{
 		gIntKeyClassDictionary->Clear();
+	}
+	if (gValueClassDictionary)
+	{
+		gValueClassDictionary->Clear();
 	}
 }
 
@@ -812,10 +732,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsValueType && !keyType->IsPrimitive && !keyType->IsEnum)
@@ -823,10 +743,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsInterface)
@@ -834,10 +754,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else
@@ -927,21 +847,21 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	}
 	else if (valueType->IsClass)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsValueType && !valueType->IsPrimitive && !valueType->IsEnum)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsInterface)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else
 	{
@@ -8984,10 +8904,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsValueType && !keyType->IsPrimitive && !keyType->IsEnum)
@@ -8995,10 +8915,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsInterface)
@@ -9006,10 +8926,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else
@@ -9099,21 +9019,21 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	}
 	else if (valueType->IsClass)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsValueType && !valueType->IsPrimitive && !valueType->IsEnum)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsInterface)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else
 	{
@@ -9814,10 +9734,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsValueType && !keyType->IsPrimitive && !keyType->IsEnum)
@@ -9825,10 +9745,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsInterface)
@@ -9836,10 +9756,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else
@@ -9929,21 +9849,21 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	}
 	else if (valueType->IsClass)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsValueType && !valueType->IsPrimitive && !valueType->IsEnum)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsInterface)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else
 	{
@@ -10644,10 +10564,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsValueType && !keyType->IsPrimitive && !keyType->IsEnum)
@@ -10655,10 +10575,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsInterface)
@@ -10666,10 +10586,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else
@@ -10759,21 +10679,21 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	}
 	else if (valueType->IsClass)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsValueType && !valueType->IsPrimitive && !valueType->IsEnum)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsInterface)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else
 	{
@@ -11386,6 +11306,8 @@ MultiMapWapper::CShorpMultiConstNode<Key, Value>^ MultiMapWapper::CSharpMultiMap
 	CShorpMultiConstNode<Key, Value>^ temp = gcnew CShorpMultiConstNode<Key, Value>();
 	if (gIntKeyClassDictionary)
 		temp->SetIntKeyClassDictionary(gIntKeyClassDictionary);
+	if (gValueClassDictionary)
+		temp->SetValueClassDictionary(gValueClassDictionary);
 	switch (nKeyValueType)
 	{
 	case 0: default:
@@ -11988,6 +11910,8 @@ MultiMapWapper::CShorpMultiConstNode<Key, Value>^ MultiMapWapper::CSharpMultiMap
 	CShorpMultiConstNode<Key, Value>^ temp = gcnew CShorpMultiConstNode<Key, Value>();
 	if (gIntKeyClassDictionary)
 		temp->SetIntKeyClassDictionary(gIntKeyClassDictionary);
+	if (gValueClassDictionary)
+		temp->SetValueClassDictionary(gValueClassDictionary);
 	switch (nKeyValueType)
 	{
 	case 0: default:
@@ -12678,10 +12602,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsValueType && !keyType->IsPrimitive && !keyType->IsEnum)
@@ -12689,10 +12613,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsInterface)
@@ -12700,10 +12624,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else
@@ -12793,21 +12717,21 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	}
 	else if (valueType->IsClass)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsValueType && !valueType->IsPrimitive && !valueType->IsEnum)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsInterface)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else
 	{
@@ -13508,10 +13432,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsValueType && !keyType->IsPrimitive && !keyType->IsEnum)
@@ -13519,10 +13443,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else if (keyType->IsInterface)
@@ -13530,10 +13454,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		if (gKeyClassDictionary->TryGetValue(key, Key__Int));
 		else
 		{
-			gKeyClassDictionary->Add(key, nDictionaryKeyCount);
-			gIntKeyClassDictionary->Add(nDictionaryKeyCount, key);
-			Key__Int = nDictionaryKeyCount;
-			nDictionaryKeyCount++;
+			gKeyClassDictionary->Add(key, nDictionaryCount);
+			gIntKeyClassDictionary->Add(nDictionaryCount, key);
+			Key__Int = nDictionaryCount;
+			nDictionaryCount++;
 		}
 	}
 	else
@@ -13623,21 +13547,21 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	}
 	else if (valueType->IsClass)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsValueType && !valueType->IsPrimitive && !valueType->IsEnum)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else if (valueType->IsInterface)
 	{
-		gValueClassDictionary->Add(nDictionaryValueCount, value);
-		Value__Int = nDictionaryValueCount;
-		nDictionaryValueCount++;
+		gValueClassDictionary->Add(nDictionaryCount, value);
+		Value__Int = nDictionaryCount;
+		nDictionaryCount++;
 	}
 	else
 	{
@@ -15449,7 +15373,8 @@ MultiMapWapper::CShorpCReverseNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<K
 
 	if (gIntKeyClassDictionary)
 		temp->SetIntKeyClassDictionary(gIntKeyClassDictionary);
-
+	if (gValueClassDictionary)
+		temp->SetValueClassDictionary(gValueClassDictionary);
 	switch (nKeyValueType)
 	{
 	case 0: default:
@@ -16053,7 +15978,8 @@ MultiMapWapper::CShorpCReverseNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<K
 
 	if (gIntKeyClassDictionary)
 		temp->SetIntKeyClassDictionary(gIntKeyClassDictionary);
-
+	if (gValueClassDictionary)
+		temp->SetValueClassDictionary(gValueClassDictionary);
 	switch (nKeyValueType)
 	{
 	case 0: default:
@@ -16750,10 +16676,6 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 	}
 	else
 	{
-		GCHandle handle = GCHandle::Alloc(value);
-		IntPtr ptr = GCHandle::ToIntPtr(handle);
-		Value__Int = ptr.ToInt64();
-		handle.Free();
 		return;
 	}
 
@@ -16801,7 +16723,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode13->GetValue() = ValueWstring;
 		return;
 	case 14:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode14->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode14->GetValue()] = value;
 		return;
 	case 15:
 		multiNodeUnion->CPPmultinode15->GetValue() = ValueUchar;
@@ -16843,7 +16766,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode27->GetValue() = ValueWstring;
 		return;
 	case 28:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode28->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode28->GetValue()] = value;
 		return;
 	case 29:
 		multiNodeUnion->CPPmultinode29->GetValue() = ValueUchar;
@@ -16885,7 +16809,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode41->GetValue() = ValueWstring;
 		return;
 	case 42:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode42->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode42->GetValue()] = value;
 		return;
 	case 43:
 		multiNodeUnion->CPPmultinode43->GetValue() = ValueUchar;
@@ -16927,7 +16852,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode55->GetValue() = ValueWstring;
 		return;
 	case 56:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode56->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode56->GetValue()] = value;
 		return;
 	case 57:
 		multiNodeUnion->CPPmultinode57->GetValue() = ValueUchar;
@@ -16969,7 +16895,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode69->GetValue() = ValueWstring;
 		return;
 	case 70:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode70->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode70->GetValue()] = value;
 		return;
 	case 71:
 		multiNodeUnion->CPPmultinode71->GetValue() = ValueUchar;
@@ -17011,7 +16938,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode83->GetValue() = ValueWstring;
 		return;
 	case 84:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode84->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode84->GetValue()] = value;
 		return;
 	case 85:
 		multiNodeUnion->CPPmultinode85->GetValue() = ValueUchar;
@@ -17053,7 +16981,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode97->GetValue() = ValueWstring;
 		return;
 	case 98:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode98->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode98->GetValue()] = value;
 		return;
 	case 99:
 		multiNodeUnion->CPPmultinode99->GetValue() = ValueUchar;
@@ -17095,7 +17024,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode111->GetValue() = ValueWstring;
 		return;
 	case 112:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode112->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode112->GetValue()] = value;
 		return;
 	case 113:
 		multiNodeUnion->CPPmultinode113->GetValue() = ValueUchar;
@@ -17137,7 +17067,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode125->GetValue() = ValueWstring;
 		return;
 	case 126:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode126->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode126->GetValue()] = value;
 		return;
 	case 127:
 		multiNodeUnion->CPPmultinode127->GetValue() = ValueUchar;
@@ -17179,7 +17110,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode139->GetValue() = ValueWstring;
 		return;
 	case 140:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode140->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode140->GetValue()] = value;
 		return;
 	case 141:
 		multiNodeUnion->CPPmultinode141->GetValue() = ValueUchar;
@@ -17221,7 +17153,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode153->GetValue() = ValueWstring;
 		return;
 	case 154:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode154->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode154->GetValue()] = value;
 		return;
 	case 155:
 		multiNodeUnion->CPPmultinode155->GetValue() = ValueUchar;
@@ -17263,7 +17196,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode167->GetValue() = ValueWstring;
 		return;
 	case 168:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode168->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode168->GetValue()] = value;
 		return;
 	case 169:
 		multiNodeUnion->CPPmultinode169->GetValue() = ValueUchar;
@@ -17305,7 +17239,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode181->GetValue() = ValueWstring;
 		return;
 	case 182:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode182->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode182->GetValue()] = value;
 		return;
 	case 183:
 		multiNodeUnion->CPPmultinode183->GetValue() = ValueUchar;
@@ -17347,7 +17282,8 @@ void MultiMapWapper::CShorpMultiNode<Key, Value>::SetValue(Value value)
 		multiNodeUnion->CPPmultinode195->GetValue() = ValueWstring;
 		return;
 	case 196:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[multiNodeUnion->CPPmultinode196->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[multiNodeUnion->CPPmultinode196->GetValue()] = value;
 		return;
 	}
 	return;
@@ -17500,7 +17436,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode13->GetValue() = ValueWstring;
 		return;
 	case 14:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode14->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode14->GetValue()] = value;
 		return;
 	case 15:
 		reverseNodeUnion->CPPreversenode15->GetValue() = ValueUchar;
@@ -17542,7 +17479,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode27->GetValue() = ValueWstring;
 		return;
 	case 28:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode28->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode28->GetValue()] = value;
 		return;
 	case 29:
 		reverseNodeUnion->CPPreversenode29->GetValue() = ValueUchar;
@@ -17584,7 +17522,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode41->GetValue() = ValueWstring;
 		return;
 	case 42:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode42->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode42->GetValue()] = value;
 		return;
 	case 43:
 		reverseNodeUnion->CPPreversenode43->GetValue() = ValueUchar;
@@ -17626,7 +17565,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode55->GetValue() = ValueWstring;
 		return;
 	case 56:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode56->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode56->GetValue()] = value;
 		return;
 	case 57:
 		reverseNodeUnion->CPPreversenode57->GetValue() = ValueUchar;
@@ -17668,7 +17608,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode69->GetValue() = ValueWstring;
 		return;
 	case 70:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode70->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode70->GetValue()] = value;
 		return;
 	case 71:
 		reverseNodeUnion->CPPreversenode71->GetValue() = ValueUchar;
@@ -17710,7 +17651,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode83->GetValue() = ValueWstring;
 		return;
 	case 84:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode84->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode84->GetValue()] = value;
 		return;
 	case 85:
 		reverseNodeUnion->CPPreversenode85->GetValue() = ValueUchar;
@@ -17752,7 +17694,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode97->GetValue() = ValueWstring;
 		return;
 	case 98:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode98->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode98->GetValue()] = value;
 		return;
 	case 99:
 		reverseNodeUnion->CPPreversenode99->GetValue() = ValueUchar;
@@ -17794,7 +17737,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode111->GetValue() = ValueWstring;
 		return;
 	case 112:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode112->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode112->GetValue()] = value;
 		return;
 	case 113:
 		reverseNodeUnion->CPPreversenode113->GetValue() = ValueUchar;
@@ -17836,7 +17780,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode125->GetValue() = ValueWstring;
 		return;
 	case 126:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode126->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode126->GetValue()] = value;
 		return;
 	case 127:
 		reverseNodeUnion->CPPreversenode127->GetValue() = ValueUchar;
@@ -17878,7 +17823,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode139->GetValue() = ValueWstring;
 		return;
 	case 140:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode140->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode140->GetValue()] = value;
 		return;
 	case 141:
 		reverseNodeUnion->CPPreversenode141->GetValue() = ValueUchar;
@@ -17920,7 +17866,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode153->GetValue() = ValueWstring;
 		return;
 	case 154:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode154->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode154->GetValue()] = value;
 		return;
 	case 155:
 		reverseNodeUnion->CPPreversenode155->GetValue() = ValueUchar;
@@ -17962,7 +17909,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode167->GetValue() = ValueWstring;
 		return;
 	case 168:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode168->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode168->GetValue()] = value;
 		return;
 	case 169:
 		reverseNodeUnion->CPPreversenode169->GetValue() = ValueUchar;
@@ -18004,7 +17952,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode181->GetValue() = ValueWstring;
 		return;
 	case 182:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode182->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode182->GetValue()] = value;
 		return;
 	case 183:
 		reverseNodeUnion->CPPreversenode183->GetValue() = ValueUchar;
@@ -18046,7 +17995,8 @@ void MultiMapWapper::CShorpReverseNode<Key, Value>::SetValue(Value value)
 		reverseNodeUnion->CPPreversenode195->GetValue() = ValueWstring;
 		return;
 	case 196:
-		MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()[reverseNodeUnion->CPPreversenode196->GetValue()] = value;
+		if (gValueClassDictionary != nullptr)
+			gValueClassDictionary[reverseNodeUnion->CPPreversenode196->GetValue()] = value;
 		return;
 	}
 	return;

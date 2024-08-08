@@ -6,7 +6,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 {
 	if (Object::ReferenceEquals(other, nullptr)) return;
 
-	nDictionaryKeyCount = other->nDictionaryKeyCount;
+	nDictionaryCount = other->nDictionaryCount;
 
 	multimapUnion = new Utilities::MultiMapUnion();
 	multiNode = gcnew CShorpMultiNode<Key, Value>();
@@ -18,7 +18,6 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 	int ValueNum = 0;
 	bool bgClassKeyDictionaryInit = false;
 	bool bgClassValueDictionaryInit = false;
-	bool bCopyKeyValue = false;
 	if (keyType->Equals(System::Byte::typeid))
 	{
 		KeyNum = 0;
@@ -211,8 +210,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap13 = new MultiMap<unsigned char, std::wstring>(*other->multimapUnion->CPPmultimap13);
 		break;
 	case 14:
-		multimapUnion->CPPmultimap14 = new MultiMap<unsigned char, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap14 = new MultiMap<unsigned char, __int64>(*other->multimapUnion->CPPmultimap14);
 		break;
 	case 15:
 		multimapUnion->CPPmultimap15 = new MultiMap<char, unsigned char>(*other->multimapUnion->CPPmultimap15);
@@ -254,8 +252,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap27 = new MultiMap<char, std::wstring>(*other->multimapUnion->CPPmultimap27);
 		break;
 	case 28:
-		multimapUnion->CPPmultimap28 = new MultiMap<char, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap28 = new MultiMap<char, __int64>(*other->multimapUnion->CPPmultimap28);
 		break;
 	case 29:
 		multimapUnion->CPPmultimap29 = new MultiMap<short, unsigned char>(*other->multimapUnion->CPPmultimap29);
@@ -297,8 +294,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap41 = new MultiMap<short, std::wstring>(*other->multimapUnion->CPPmultimap41);
 		break;
 	case 42:
-		multimapUnion->CPPmultimap42 = new MultiMap<short, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap42 = new MultiMap<short, __int64>(*other->multimapUnion->CPPmultimap42);
 		break;
 	case 43:
 		multimapUnion->CPPmultimap43 = new MultiMap<unsigned short, unsigned char>(*other->multimapUnion->CPPmultimap43);
@@ -340,8 +336,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap55 = new MultiMap<unsigned short, std::wstring>(*other->multimapUnion->CPPmultimap55);
 		break;
 	case 56:
-		multimapUnion->CPPmultimap56 = new MultiMap<unsigned short, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap56 = new MultiMap<unsigned short, __int64>(*other->multimapUnion->CPPmultimap56);
 		break;
 	case 57:
 		multimapUnion->CPPmultimap57 = new MultiMap<int, unsigned char>(*other->multimapUnion->CPPmultimap57);
@@ -383,8 +378,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap69 = new MultiMap<int, std::wstring>(*other->multimapUnion->CPPmultimap69);
 		break;
 	case 70:
-		multimapUnion->CPPmultimap70 = new MultiMap<int, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap70 = new MultiMap<int, __int64>(*other->multimapUnion->CPPmultimap70);
 		break;
 	case 71:
 		multimapUnion->CPPmultimap71 = new MultiMap<unsigned int, unsigned char>(*other->multimapUnion->CPPmultimap71);
@@ -426,8 +420,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap83 = new MultiMap<unsigned int, std::wstring>(*other->multimapUnion->CPPmultimap83);
 		break;
 	case 84:
-		multimapUnion->CPPmultimap84 = new MultiMap<unsigned int, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap84 = new MultiMap<unsigned int, __int64>(*other->multimapUnion->CPPmultimap84);
 		break;
 	case 85:
 		multimapUnion->CPPmultimap85 = new MultiMap<long long, unsigned char>(*other->multimapUnion->CPPmultimap85);
@@ -469,8 +462,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap97 = new MultiMap<long long, std::wstring>(*other->multimapUnion->CPPmultimap97);
 		break;
 	case 98:
-		multimapUnion->CPPmultimap98 = new MultiMap<long long, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap98 = new MultiMap<long long, __int64>(*other->multimapUnion->CPPmultimap98);
 		break;
 	case 99:
 		multimapUnion->CPPmultimap99 = new MultiMap<unsigned long long, unsigned char>(*other->multimapUnion->CPPmultimap99);
@@ -512,8 +504,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap111 = new MultiMap<unsigned long long, std::wstring>(*other->multimapUnion->CPPmultimap111);
 		break;
 	case 112:
-		multimapUnion->CPPmultimap112 = new MultiMap<unsigned long long, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap112 = new MultiMap<unsigned long long, __int64>(*other->multimapUnion->CPPmultimap112);
 		break;
 	case 113:
 		multimapUnion->CPPmultimap113 = new MultiMap<float, unsigned char>(*other->multimapUnion->CPPmultimap113);
@@ -555,8 +546,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap125 = new MultiMap<float, std::wstring>(*other->multimapUnion->CPPmultimap125);
 		break;
 	case 126:
-		multimapUnion->CPPmultimap126 = new MultiMap<float, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap126 = new MultiMap<float, __int64>(*other->multimapUnion->CPPmultimap126);
 		break;
 	case 127:
 		multimapUnion->CPPmultimap127 = new MultiMap<double, unsigned char>(*other->multimapUnion->CPPmultimap127);
@@ -598,8 +588,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap139 = new MultiMap<double, std::wstring>(*other->multimapUnion->CPPmultimap139);
 		break;
 	case 140:
-		multimapUnion->CPPmultimap140 = new MultiMap<double, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap140 = new MultiMap<double, __int64>(*other->multimapUnion->CPPmultimap140);
 		break;
 	case 141:
 		multimapUnion->CPPmultimap141 = new MultiMap<wchar_t, unsigned char>(*other->multimapUnion->CPPmultimap141);
@@ -641,8 +630,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap153 = new MultiMap<wchar_t, std::wstring>(*other->multimapUnion->CPPmultimap153);
 		break;
 	case 154:
-		multimapUnion->CPPmultimap154 = new MultiMap<wchar_t, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap154 = new MultiMap<wchar_t, __int64>(*other->multimapUnion->CPPmultimap154);
 		break;
 	case 155:
 		multimapUnion->CPPmultimap155 = new MultiMap<bool, unsigned char>(*other->multimapUnion->CPPmultimap155);
@@ -684,8 +672,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap167 = new MultiMap<bool, std::wstring>(*other->multimapUnion->CPPmultimap167);
 		break;
 	case 168:
-		multimapUnion->CPPmultimap168 = new MultiMap<bool, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap168 = new MultiMap<bool, __int64>(*other->multimapUnion->CPPmultimap168);
 		break;
 	case 169:
 		multimapUnion->CPPmultimap169 = new MultiMap<std::wstring, unsigned char>(*other->multimapUnion->CPPmultimap169);
@@ -727,8 +714,7 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap181 = new MultiMap<std::wstring, std::wstring>(*other->multimapUnion->CPPmultimap181);
 		break;
 	case 182:
-		multimapUnion->CPPmultimap182 = new MultiMap<std::wstring, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap182 = new MultiMap<std::wstring, __int64>(*other->multimapUnion->CPPmultimap182);
 		break;
 	case 183:
 		multimapUnion->CPPmultimap183 = new MultiMap<__int64, unsigned char>(*other->multimapUnion->CPPmultimap183);
@@ -770,31 +756,30 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		multimapUnion->CPPmultimap195 = new MultiMap<__int64, std::wstring>(*other->multimapUnion->CPPmultimap195);
 		break;
 	case 196:
-		multimapUnion->CPPmultimap196 = new MultiMap<__int64, __int64>();
-		bCopyKeyValue = true;
+		multimapUnion->CPPmultimap196 = new MultiMap<__int64, __int64>(*other->multimapUnion->CPPmultimap196);
 		break;
 	}
 
 	if (bgClassValueDictionaryInit == true)
 		if (gValueClassDictionary == nullptr)
-			gValueClassDictionary = gcnew System::Collections::Generic::Dictionary<System::Int64, Value>();
+		{
+			gValueClassDictionary = gcnew System::Collections::Generic::Dictionary<System::Int64, Value>(other->gValueClassDictionary);
+
+			multiNode->SetValueClassDictionary(gValueClassDictionary);
+			KeyEndNode->SetValueClassDictionary(gValueClassDictionary);
+			RIterNode->SetValueClassDictionary(gValueClassDictionary);
+		}
 	if (bgClassKeyDictionaryInit == true)
 	{
 
 		if (gKeyClassDictionary == nullptr)
 		{
-			if (bCopyKeyValue == false)
-				gKeyClassDictionary = gcnew System::Collections::Generic::Dictionary<Key, System::Int64>(other->gKeyClassDictionary);
-			else
-				gKeyClassDictionary = gcnew System::Collections::Generic::Dictionary<Key, System::Int64>();
+			gKeyClassDictionary = gcnew System::Collections::Generic::Dictionary<Key, System::Int64>(other->gKeyClassDictionary);
 		}
 
 		if (gIntKeyClassDictionary == nullptr)
 		{
-			if (bCopyKeyValue == false)
-				gIntKeyClassDictionary = gcnew System::Collections::Generic::Dictionary<System::Int64, Key>(other->gIntKeyClassDictionary);
-			else
-				gIntKeyClassDictionary = gcnew System::Collections::Generic::Dictionary<System::Int64, Key>();
+			gIntKeyClassDictionary = gcnew System::Collections::Generic::Dictionary<System::Int64, Key>(other->gIntKeyClassDictionary);
 		}
 
 		multiNode->SetIntKeyClassDictionary(gIntKeyClassDictionary);
@@ -802,11 +787,11 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		RIterNode->SetIntKeyClassDictionary(gIntKeyClassDictionary);
 	}
 
-	if (bCopyKeyValue)
-	{
-		for (auto iter = other->begin(); iter != other->end(); ++iter)
-		{
-			emplace(iter->GetKey(), iter->GetValue());
-		}
-	}
 }
+	//if (bCopyKeyValue)
+	//{
+	//	for (auto iter = other->begin(); iter != other->end(); ++iter)
+	//	{
+	//		emplace(iter->GetKey(), iter->GetValue());
+	//	}
+	//}

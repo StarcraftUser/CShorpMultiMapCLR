@@ -233,4 +233,19 @@ void MultiMapWapper::CSharpMultiMap<Key, Value>::Swap(MultiMapWapper::CSharpMult
 		OtherCSharpMultiMap->KeyEndNode->SetIntKeyClassDictionary(OtherCSharpMultiMap->gIntKeyClassDictionary);
 		OtherCSharpMultiMap->RIterNode->SetIntKeyClassDictionary(OtherCSharpMultiMap->gIntKeyClassDictionary);
 	}
+
+	if (gValueClassDictionary && OtherCSharpMultiMap->gValueClassDictionary)
+	{
+		auto temp = gValueClassDictionary;
+		gValueClassDictionary = OtherCSharpMultiMap->gValueClassDictionary;
+		OtherCSharpMultiMap->gValueClassDictionary = temp;
+
+		multiNode->SetValueClassDictionary(gValueClassDictionary);
+		KeyEndNode->SetValueClassDictionary(gValueClassDictionary);
+		RIterNode->SetValueClassDictionary(gValueClassDictionary);
+
+		OtherCSharpMultiMap->multiNode->SetValueClassDictionary(OtherCSharpMultiMap->gValueClassDictionary);
+		OtherCSharpMultiMap->KeyEndNode->SetValueClassDictionary(OtherCSharpMultiMap->gValueClassDictionary);
+		OtherCSharpMultiMap->RIterNode->SetValueClassDictionary(OtherCSharpMultiMap->gValueClassDictionary);
+	}
 }

@@ -14,6 +14,11 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::~CSharpMultiMap()
 		gIntKeyClassDictionary->Clear();
 		gKeyClassDictionary->Clear();
 	}
+
+	if (gValueClassDictionary)
+	{
+		gValueClassDictionary->Clear();
+	}
 }
 
 

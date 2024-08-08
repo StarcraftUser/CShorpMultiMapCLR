@@ -4,6 +4,7 @@ generic<typename Key, typename Value>
 MultiMapWapper::CShorpCReverseNode<Key, Value>::CShorpCReverseNode()
 {
 	gIntKeyClassDictionary = nullptr;
+	gValueClassDictionary = nullptr;
 	creverseNodeUnion = new Utilities::CReverseNodeUnion();
 	Type^ keyType = Key::typeid;
 	Type^ valueType = Value::typeid;
@@ -2793,6 +2794,7 @@ MultiMapWapper::CShorpCReverseNode<Key, Value>^ MultiMapWapper::CShorpCReverseNo
 	if (thisObj->nKeyValueType != other->nKeyValueType) return thisObj;
 
 	if (other->gIntKeyClassDictionary) thisObj->gIntKeyClassDictionary = other->gIntKeyClassDictionary;
+	if (other->gValueClassDictionary) thisObj->gValueClassDictionary = other->gValueClassDictionary;
 
 	switch (thisObj->nKeyValueType)
 	{
@@ -3753,85 +3755,85 @@ Value MultiMapWapper::CShorpCReverseNode<Key, Value>::GetValue()
 		managedValue = gcnew String(creverseNodeUnion->CPPcreversenode195->GetValue().c_str());
 		return safe_cast<Value>(managedValue);
 	case 14:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode14->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode14->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 28:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode28->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode28->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 42:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode42->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode42->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 56:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode56->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode56->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 70:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode70->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode70->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 84:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode84->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode84->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 98:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode98->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode98->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 112:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode112->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode112->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 126:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode126->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode126->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 140:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode140->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode140->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 154:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode154->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode154->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 168:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode168->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode168->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 182:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode182->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode182->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
 		else break;
 	case 196:
-		if (MultiMapWapper::CSharpMultiMap<Key, Value>::ValueClassDictionary()->TryGetValue(creverseNodeUnion->CPPcreversenode196->GetValue(), objtarget))
+		if (gValueClassDictionary != nullptr && gValueClassDictionary->TryGetValue(creverseNodeUnion->CPPcreversenode196->GetValue(), objtarget))
 		{
 			return objtarget;
 		}
@@ -4510,6 +4512,13 @@ void MultiMapWapper::CShorpCReverseNode<Key, Value>::SetIntKeyClassDictionary(Sy
 {
 	if (ClassDictionary == nullptr) return;
 	gIntKeyClassDictionary = ClassDictionary;
+}
+
+generic<typename Key, typename Value>
+void MultiMapWapper::CShorpCReverseNode<Key, Value>::SetValueClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Value>^ ClassDictionary)
+{
+	if (ClassDictionary == nullptr) return;
+	gValueClassDictionary = ClassDictionary;
 }
 
 //

@@ -10,6 +10,7 @@ namespace MultiMapWapper
 	private:
 		Utilities::MultiNodeUnion* multiNodeUnion;
 		System::Collections::Generic::Dictionary<System::Int64, Key>^ gIntKeyClassDictionary;
+		System::Collections::Generic::Dictionary<System::Int64, Value>^ gValueClassDictionary;
 		int nKeyValueType = 0;
 		int isInitialized = 0;
 		/*virtual*/ void Next();
@@ -30,6 +31,7 @@ namespace MultiMapWapper
 			return this->isInitialized;
 		}
 		/*virtual*/ void SetIntKeyClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Key>^ ClassDictionary);
+		/*virtual*/ void SetValueClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Value>^ ClassDictionary);
 	public:
 		CShorpMultiNode();
 		/*virtual*/ ~CShorpMultiNode();
@@ -53,6 +55,7 @@ namespace MultiMapWapper
 	private:
 		Utilities::MultiConstNodeUnion* multiConstNodeUnion;
 		System::Collections::Generic::Dictionary<System::Int64, Key>^ gIntKeyClassDictionary;
+		System::Collections::Generic::Dictionary<System::Int64, Value>^ gValueClassDictionary;
 		int nKeyValueType = 0;
 		int isInitialized = 0;
 		/*virtual*/ void Next();
@@ -73,6 +76,7 @@ namespace MultiMapWapper
 			return this->isInitialized;
 		}
 		/*virtual*/ void SetIntKeyClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Key>^ ClassDictionary);
+		/*virtual*/ void SetValueClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Value>^ ClassDictionary);
 	public:
 		CShorpMultiConstNode();
 		/*virtual*/ ~CShorpMultiConstNode();
@@ -94,6 +98,7 @@ namespace MultiMapWapper
 	private:
 		Utilities::ReverseNodeUnion* reverseNodeUnion;
 		System::Collections::Generic::Dictionary<System::Int64, Key>^ gIntKeyClassDictionary;
+		System::Collections::Generic::Dictionary<System::Int64, Value>^ gValueClassDictionary;
 		int nKeyValueType = 0;
 		int isInitialized = 0;
 		/*virtual*/ void Next();
@@ -114,6 +119,7 @@ namespace MultiMapWapper
 			return this->isInitialized;
 		}
 		/*virtual*/ void SetIntKeyClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Key>^ ClassDictionary);
+		/*virtual*/ void SetValueClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Value>^ ClassDictionary);
 	public:
 		CShorpReverseNode();
 		/*virtual*/ ~CShorpReverseNode();
@@ -136,6 +142,7 @@ namespace MultiMapWapper
 	private :
 		Utilities::CReverseNodeUnion* creverseNodeUnion;
 		System::Collections::Generic::Dictionary<System::Int64, Key>^ gIntKeyClassDictionary;
+		System::Collections::Generic::Dictionary<System::Int64, Value>^ gValueClassDictionary;
 		int nKeyValueType = 0;
 		int isInitialized = 0;
 		/*virtual*/ void Next();
@@ -156,6 +163,7 @@ namespace MultiMapWapper
 			return this->isInitialized;
 		}
 		/*virtual*/ void SetIntKeyClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Key>^ ClassDictionary);
+		/*virtual*/ void SetValueClassDictionary(System::Collections::Generic::Dictionary<System::Int64, Value>^ ClassDictionary);
 	public:
 		CShorpCReverseNode();
 		/*virtual*/ ~CShorpCReverseNode();
@@ -181,9 +189,9 @@ namespace MultiMapWapper
 		CShorpReverseNode<Key, Value>^ RIterNode;
 		System::Collections::Generic::Dictionary<Key, System::Int64>^ gKeyClassDictionary = nullptr;
 		System::Collections::Generic::Dictionary<System::Int64, Key>^ gIntKeyClassDictionary = nullptr;
-		static System::Collections::Generic::Dictionary<System::Int64, Value>^ gValueClassDictionary = nullptr;
-		static System::Int64 nDictionaryValueCount = 0;
-		System::Int64 nDictionaryKeyCount = 0;
+		System::Collections::Generic::Dictionary<System::Int64, Value>^ gValueClassDictionary = nullptr;
+		//static System::Int64 nDictionaryValueCount = 0;
+		System::Int64 nDictionaryCount = 0;
 		int nKeyValueType = 0;
 	public :
 		CSharpMultiMap();
@@ -230,7 +238,7 @@ namespace MultiMapWapper
 			return gcnew CSharpMultiMapEnumerator(this);
 		}
 	internal:
-		static System::Collections::Generic::Dictionary<System::Int64, Value>^ ValueClassDictionary();
+		System::Collections::Generic::Dictionary<System::Int64, Value>^ ValueClassDictionary();
 		System::Collections::Generic::Dictionary<System::Int64, Key>^ KeyClassDictionary();
 
 	private:

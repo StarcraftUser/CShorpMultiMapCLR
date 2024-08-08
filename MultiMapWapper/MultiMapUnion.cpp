@@ -756,7 +756,14 @@ inline MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap()
 
 	if (bgClassValueDictionaryInit == true)
 		if (gValueClassDictionary == nullptr)
+		{
 			gValueClassDictionary = gcnew System::Collections::Generic::Dictionary<System::Int64, Value>();
+
+			multiNode->SetValueClassDictionary(gValueClassDictionary);
+			KeyEndNode->SetValueClassDictionary(gValueClassDictionary);
+			RIterNode->SetValueClassDictionary(gValueClassDictionary);
+		}
+
 	if (bgClassKeyDictionaryInit == true)
 	{
 
