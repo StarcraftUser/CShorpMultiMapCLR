@@ -765,9 +765,9 @@ MultiMapWapper::CShorpCReverseNode<Key, Value>^ MultiMapWapper::CShorpCReverseNo
 }
 
 #define CReverseNode_Next_CASE(NUM) \
-    case NUM: \
-(*(creverseNodeUnion->CPPcreversenode##NUM))++; \
-return;
+	case NUM: \
+		(*(creverseNodeUnion->CPPcreversenode##NUM))++; \
+		return;
 
 generic<typename Key, typename Value>
 inline void MultiMapWapper::CShorpCReverseNode<Key, Value>::Next()
@@ -978,9 +978,9 @@ inline void MultiMapWapper::CShorpCReverseNode<Key, Value>::Next()
 }
 
 #define CReverseNode_Previous_CASE(NUM) \
-    case NUM: \
-(*(creverseNodeUnion->CPPcreversenode##NUM))--; \
-return;
+	case NUM: \
+		(*(creverseNodeUnion->CPPcreversenode##NUM))--; \
+		return;
 
 generic<typename Key, typename Value>
 void MultiMapWapper::CShorpCReverseNode<Key, Value>::Previous()
@@ -1191,8 +1191,8 @@ void MultiMapWapper::CShorpCReverseNode<Key, Value>::Previous()
 }
 
 #define CReverseNode_Compare_Equals_CASE(NUM) \
-    case NUM: \
-return (*(thisObj->creverseNodeUnion->CPPcreversenode##NUM) == *(other->creverseNodeUnion->CPPcreversenode##NUM));
+	case NUM: \
+		return (*(thisObj->creverseNodeUnion->CPPcreversenode##NUM) == *(other->creverseNodeUnion->CPPcreversenode##NUM));
 
 generic<typename Key, typename Value>
 bool MultiMapWapper::CShorpCReverseNode<Key, Value>::operator==(const CShorpCReverseNode<Key, Value>^ thisObj, const CShorpCReverseNode<Key, Value>^ other)
@@ -1408,8 +1408,8 @@ bool MultiMapWapper::CShorpCReverseNode<Key, Value>::operator==(const CShorpCRev
 }
 
 #define CReverseNode_Compare_NotEquals_CASE(NUM) \
-    case NUM: \
-return (*(thisObj->creverseNodeUnion->CPPcreversenode##NUM) != *(other->creverseNodeUnion->CPPcreversenode##NUM));
+	case NUM: \
+		return (*(thisObj->creverseNodeUnion->CPPcreversenode##NUM) != *(other->creverseNodeUnion->CPPcreversenode##NUM));
 
 generic<typename Key, typename Value>
 bool MultiMapWapper::CShorpCReverseNode<Key, Value>::operator!=(const CShorpCReverseNode<Key, Value>^ thisObj, const CShorpCReverseNode<Key, Value>^ other)
@@ -1626,9 +1626,9 @@ bool MultiMapWapper::CShorpCReverseNode<Key, Value>::operator!=(const CShorpCRev
 }
 
 #define CReverseNode_Copy_CASE(NUM) \
-    case NUM: \
-(*(thisObj->creverseNodeUnion->CPPcreversenode##NUM) = *(other->creverseNodeUnion->CPPcreversenode##NUM)); \
-break;
+	case NUM: \
+		(*(thisObj->creverseNodeUnion->CPPcreversenode##NUM) = *(other->creverseNodeUnion->CPPcreversenode##NUM)); \
+		break;
 
 generic<typename Key, typename Value>
 MultiMapWapper::CShorpCReverseNode<Key, Value>^ MultiMapWapper::CShorpCReverseNode<Key, Value>::operator%(CShorpCReverseNode<Key, Value>^ thisObj, CShorpCReverseNode<Key, Value>^ other)
