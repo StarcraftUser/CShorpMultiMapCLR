@@ -1077,6 +1077,10 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	return multiNode->DeepCopy();
 }
 
+#define MultiMap_Size_CASE(NUM) \
+	case NUM: \
+		return static_cast<System::UInt64>(multimapUnion->CPPmultimap##NUM->size());
+
 generic<typename Key, typename Value>
 System::UInt64 MultiMapWapper::CSharpMultiMap<Key, Value>::size()
 {
@@ -1084,398 +1088,203 @@ System::UInt64 MultiMapWapper::CSharpMultiMap<Key, Value>::size()
 	{
 	case 0:	default:
 		return 0;
-	case 1:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap1->size());
-	case 2:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap2->size());
-	case 3:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap3->size());
-	case 4:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap4->size());
-	case 5:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap5->size());
-	case 6:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap6->size());
-	case 7:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap7->size());
-	case 8:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap8->size());
-	case 9:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap9->size());
-	case 10:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap10->size());
-	case 11:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap11->size());
-	case 12:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap12->size());
-	case 13:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap13->size());
-	case 14:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap14->size());
-	case 15:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap15->size());
-	case 16:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap16->size());
-	case 17:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap17->size());
-	case 18:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap18->size());
-	case 19:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap19->size());
-	case 20:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap20->size());
-	case 21:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap21->size());
-	case 22:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap22->size());
-	case 23:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap23->size());
-	case 24:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap24->size());
-	case 25:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap25->size());
-	case 26:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap26->size());
-	case 27:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap27->size());
-	case 28:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap28->size());
-	case 29:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap29->size());
-	case 30:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap30->size());
-	case 31:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap31->size());
-	case 32:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap32->size());
-	case 33:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap33->size());
-	case 34:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap34->size());
-	case 35:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap35->size());
-	case 36:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap36->size());
-	case 37:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap37->size());
-	case 38:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap38->size());
-	case 39:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap39->size());
-	case 40:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap40->size());
-	case 41:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap41->size());
-	case 42:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap42->size());
-	case 43:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap43->size());
-	case 44:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap44->size());
-	case 45:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap45->size());
-	case 46:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap46->size());
-	case 47:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap47->size());
-	case 48:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap48->size());
-	case 49:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap49->size());
-	case 50:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap50->size());
-	case 51:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap51->size());
-	case 52:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap52->size());
-	case 53:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap53->size());
-	case 54:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap54->size());
-	case 55:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap55->size());
-	case 56:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap56->size());
-	case 57:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap57->size());
-	case 58:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap58->size());
-	case 59:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap59->size());
-	case 60:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap60->size());
-	case 61:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap61->size());
-	case 62:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap62->size());
-	case 63:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap63->size());
-	case 64:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap64->size());
-	case 65:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap65->size());
-	case 66:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap66->size());
-	case 67:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap67->size());
-	case 68:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap68->size());
-	case 69:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap69->size());
-	case 70:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap70->size());
-	case 71:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap71->size());
-	case 72:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap72->size());
-	case 73:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap73->size());
-	case 74:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap74->size());
-	case 75:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap75->size());
-	case 76:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap76->size());
-	case 77:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap77->size());
-	case 78:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap78->size());
-	case 79:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap79->size());
-	case 80:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap80->size());
-	case 81:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap81->size());
-	case 82:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap82->size());
-	case 83:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap83->size());
-	case 84:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap84->size());
-	case 85:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap85->size());
-	case 86:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap86->size());
-	case 87:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap87->size());
-	case 88:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap88->size());
-	case 89:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap89->size());
-	case 90:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap90->size());
-	case 91:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap91->size());
-	case 92:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap92->size());
-	case 93:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap93->size());
-	case 94:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap94->size());
-	case 95:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap95->size());
-	case 96:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap96->size());
-	case 97:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap97->size());
-	case 98:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap98->size());
-	case 99:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap99->size());
-	case 100:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap100->size());
-	case 101:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap101->size());
-	case 102:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap102->size());
-	case 103:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap103->size());
-	case 104:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap104->size());
-	case 105:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap105->size());
-	case 106:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap106->size());
-	case 107:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap107->size());
-	case 108:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap108->size());
-	case 109:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap109->size());
-	case 110:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap110->size());
-	case 111:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap111->size());
-	case 112:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap112->size());
-	case 113:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap113->size());
-	case 114:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap114->size());
-	case 115:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap115->size());
-	case 116:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap116->size());
-	case 117:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap117->size());
-	case 118:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap118->size());
-	case 119:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap119->size());
-	case 120:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap120->size());
-	case 121:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap121->size());
-	case 122:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap122->size());
-	case 123:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap123->size());
-	case 124:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap124->size());
-	case 125:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap125->size());
-	case 126:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap126->size());
-	case 127:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap127->size());
-	case 128:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap128->size());
-	case 129:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap129->size());
-	case 130:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap130->size());
-	case 131:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap131->size());
-	case 132:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap132->size());
-	case 133:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap133->size());
-	case 134:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap134->size());
-	case 135:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap135->size());
-	case 136:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap136->size());
-	case 137:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap137->size());
-	case 138:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap138->size());
-	case 139:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap139->size());
-	case 140:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap140->size());
-	case 141:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap141->size());
-	case 142:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap142->size());
-	case 143:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap143->size());
-	case 144:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap144->size());
-	case 145:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap145->size());
-	case 146:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap146->size());
-	case 147:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap147->size());
-	case 148:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap148->size());
-	case 149:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap149->size());
-	case 150:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap150->size());
-	case 151:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap151->size());
-	case 152:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap152->size());
-	case 153:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap153->size());
-	case 154:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap154->size());
-	case 155:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap155->size());
-	case 156:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap156->size());
-	case 157:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap157->size());
-	case 158:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap158->size());
-	case 159:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap159->size());
-	case 160:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap160->size());
-	case 161:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap161->size());
-	case 162:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap162->size());
-	case 163:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap163->size());
-	case 164:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap164->size());
-	case 165:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap165->size());
-	case 166:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap166->size());
-	case 167:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap167->size());
-	case 168:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap168->size());
-	case 169:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap169->size());
-	case 170:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap170->size());
-	case 171:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap171->size());
-	case 172:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap172->size());
-	case 173:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap173->size());
-	case 174:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap174->size());
-	case 175:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap175->size());
-	case 176:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap176->size());
-	case 177:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap177->size());
-	case 178:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap178->size());
-	case 179:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap179->size());
-	case 180:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap180->size());
-	case 181:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap181->size());
-	case 182:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap182->size());
-	case 183:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap183->size());
-	case 184:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap184->size());
-	case 185:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap185->size());
-	case 186:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap186->size());
-	case 187:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap187->size());
-	case 188:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap188->size());
-	case 189:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap189->size());
-	case 190:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap190->size());
-	case 191:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap191->size());
-	case 192:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap192->size());
-	case 193:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap193->size());
-	case 194:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap194->size());
-	case 195:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap195->size());
-	case 196:
-		return static_cast<System::UInt64>(multimapUnion->CPPmultimap196->size());
+		MultiMap_Size_CASE(1)
+		MultiMap_Size_CASE(2)
+		MultiMap_Size_CASE(3)
+		MultiMap_Size_CASE(4)
+		MultiMap_Size_CASE(5)
+		MultiMap_Size_CASE(6)
+		MultiMap_Size_CASE(7)
+		MultiMap_Size_CASE(8)
+		MultiMap_Size_CASE(9)
+		MultiMap_Size_CASE(10)
+		MultiMap_Size_CASE(11)
+		MultiMap_Size_CASE(12)
+		MultiMap_Size_CASE(13)
+		MultiMap_Size_CASE(14)
+		MultiMap_Size_CASE(15)
+		MultiMap_Size_CASE(16)
+		MultiMap_Size_CASE(17)
+		MultiMap_Size_CASE(18)
+		MultiMap_Size_CASE(19)
+		MultiMap_Size_CASE(20)
+		MultiMap_Size_CASE(21)
+		MultiMap_Size_CASE(22)
+		MultiMap_Size_CASE(23)
+		MultiMap_Size_CASE(24)
+		MultiMap_Size_CASE(25)
+		MultiMap_Size_CASE(26)
+		MultiMap_Size_CASE(27)
+		MultiMap_Size_CASE(28)
+		MultiMap_Size_CASE(29)
+		MultiMap_Size_CASE(30)
+		MultiMap_Size_CASE(31)
+		MultiMap_Size_CASE(32)
+		MultiMap_Size_CASE(33)
+		MultiMap_Size_CASE(34)
+		MultiMap_Size_CASE(35)
+		MultiMap_Size_CASE(36)
+		MultiMap_Size_CASE(37)
+		MultiMap_Size_CASE(38)
+		MultiMap_Size_CASE(39)
+		MultiMap_Size_CASE(40)
+		MultiMap_Size_CASE(41)
+		MultiMap_Size_CASE(42)
+		MultiMap_Size_CASE(43)
+		MultiMap_Size_CASE(44)
+		MultiMap_Size_CASE(45)
+		MultiMap_Size_CASE(46)
+		MultiMap_Size_CASE(47)
+		MultiMap_Size_CASE(48)
+		MultiMap_Size_CASE(49)
+		MultiMap_Size_CASE(50)
+		MultiMap_Size_CASE(51)
+		MultiMap_Size_CASE(52)
+		MultiMap_Size_CASE(53)
+		MultiMap_Size_CASE(54)
+		MultiMap_Size_CASE(55)
+		MultiMap_Size_CASE(56)
+		MultiMap_Size_CASE(57)
+		MultiMap_Size_CASE(58)
+		MultiMap_Size_CASE(59)
+		MultiMap_Size_CASE(60)
+		MultiMap_Size_CASE(61)
+		MultiMap_Size_CASE(62)
+		MultiMap_Size_CASE(63)
+		MultiMap_Size_CASE(64)
+		MultiMap_Size_CASE(65)
+		MultiMap_Size_CASE(66)
+		MultiMap_Size_CASE(67)
+		MultiMap_Size_CASE(68)
+		MultiMap_Size_CASE(69)
+		MultiMap_Size_CASE(70)
+		MultiMap_Size_CASE(71)
+		MultiMap_Size_CASE(72)
+		MultiMap_Size_CASE(73)
+		MultiMap_Size_CASE(74)
+		MultiMap_Size_CASE(75)
+		MultiMap_Size_CASE(76)
+		MultiMap_Size_CASE(77)
+		MultiMap_Size_CASE(78)
+		MultiMap_Size_CASE(79)
+		MultiMap_Size_CASE(80)
+		MultiMap_Size_CASE(81)
+		MultiMap_Size_CASE(82)
+		MultiMap_Size_CASE(83)
+		MultiMap_Size_CASE(84)
+		MultiMap_Size_CASE(85)
+		MultiMap_Size_CASE(86)
+		MultiMap_Size_CASE(87)
+		MultiMap_Size_CASE(88)
+		MultiMap_Size_CASE(89)
+		MultiMap_Size_CASE(90)
+		MultiMap_Size_CASE(91)
+		MultiMap_Size_CASE(92)
+		MultiMap_Size_CASE(93)
+		MultiMap_Size_CASE(94)
+		MultiMap_Size_CASE(95)
+		MultiMap_Size_CASE(96)
+		MultiMap_Size_CASE(97)
+		MultiMap_Size_CASE(98)
+		MultiMap_Size_CASE(99)
+		MultiMap_Size_CASE(100)
+		MultiMap_Size_CASE(101)
+		MultiMap_Size_CASE(102)
+		MultiMap_Size_CASE(103)
+		MultiMap_Size_CASE(104)
+		MultiMap_Size_CASE(105)
+		MultiMap_Size_CASE(106)
+		MultiMap_Size_CASE(107)
+		MultiMap_Size_CASE(108)
+		MultiMap_Size_CASE(109)
+		MultiMap_Size_CASE(110)
+		MultiMap_Size_CASE(111)
+		MultiMap_Size_CASE(112)
+		MultiMap_Size_CASE(113)
+		MultiMap_Size_CASE(114)
+		MultiMap_Size_CASE(115)
+		MultiMap_Size_CASE(116)
+		MultiMap_Size_CASE(117)
+		MultiMap_Size_CASE(118)
+		MultiMap_Size_CASE(119)
+		MultiMap_Size_CASE(120)
+		MultiMap_Size_CASE(121)
+		MultiMap_Size_CASE(122)
+		MultiMap_Size_CASE(123)
+		MultiMap_Size_CASE(124)
+		MultiMap_Size_CASE(125)
+		MultiMap_Size_CASE(126)
+		MultiMap_Size_CASE(127)
+		MultiMap_Size_CASE(128)
+		MultiMap_Size_CASE(129)
+		MultiMap_Size_CASE(130)
+		MultiMap_Size_CASE(131)
+		MultiMap_Size_CASE(132)
+		MultiMap_Size_CASE(133)
+		MultiMap_Size_CASE(134)
+		MultiMap_Size_CASE(135)
+		MultiMap_Size_CASE(136)
+		MultiMap_Size_CASE(137)
+		MultiMap_Size_CASE(138)
+		MultiMap_Size_CASE(139)
+		MultiMap_Size_CASE(140)
+		MultiMap_Size_CASE(141)
+		MultiMap_Size_CASE(142)
+		MultiMap_Size_CASE(143)
+		MultiMap_Size_CASE(144)
+		MultiMap_Size_CASE(145)
+		MultiMap_Size_CASE(146)
+		MultiMap_Size_CASE(147)
+		MultiMap_Size_CASE(148)
+		MultiMap_Size_CASE(149)
+		MultiMap_Size_CASE(150)
+		MultiMap_Size_CASE(151)
+		MultiMap_Size_CASE(152)
+		MultiMap_Size_CASE(153)
+		MultiMap_Size_CASE(154)
+		MultiMap_Size_CASE(155)
+		MultiMap_Size_CASE(156)
+		MultiMap_Size_CASE(157)
+		MultiMap_Size_CASE(158)
+		MultiMap_Size_CASE(159)
+		MultiMap_Size_CASE(160)
+		MultiMap_Size_CASE(161)
+		MultiMap_Size_CASE(162)
+		MultiMap_Size_CASE(163)
+		MultiMap_Size_CASE(164)
+		MultiMap_Size_CASE(165)
+		MultiMap_Size_CASE(166)
+		MultiMap_Size_CASE(167)
+		MultiMap_Size_CASE(168)
+		MultiMap_Size_CASE(169)
+		MultiMap_Size_CASE(170)
+		MultiMap_Size_CASE(171)
+		MultiMap_Size_CASE(172)
+		MultiMap_Size_CASE(173)
+		MultiMap_Size_CASE(174)
+		MultiMap_Size_CASE(175)
+		MultiMap_Size_CASE(176)
+		MultiMap_Size_CASE(177)
+		MultiMap_Size_CASE(178)
+		MultiMap_Size_CASE(179)
+		MultiMap_Size_CASE(180)
+		MultiMap_Size_CASE(181)
+		MultiMap_Size_CASE(182)
+		MultiMap_Size_CASE(183)
+		MultiMap_Size_CASE(184)
+		MultiMap_Size_CASE(185)
+		MultiMap_Size_CASE(186)
+		MultiMap_Size_CASE(187)
+		MultiMap_Size_CASE(188)
+		MultiMap_Size_CASE(189)
+		MultiMap_Size_CASE(190)
+		MultiMap_Size_CASE(191)
+		MultiMap_Size_CASE(192)
+		MultiMap_Size_CASE(193)
+		MultiMap_Size_CASE(194)
+		MultiMap_Size_CASE(195)
+		MultiMap_Size_CASE(196)
+
 	}
 	return 0;
 }
