@@ -2393,6 +2393,11 @@ System::Boolean MultiMapWapper::CSharpMultiMap<Key, Value>::empty()
 	return false;
 }
 
+#define MultiMap_find_CASE(NUM, KeyType) \
+	case NUM: \
+		*(multiNode->GetNode()->CPPmultinode##NUM) = multimapUnion->CPPmultimap##NUM->find(KeyType); \
+		break;
+
 generic<typename Key, typename Value>
 MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key, Value>::find(const Key key)
 {
@@ -2512,594 +2517,202 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	{
 	case 0:	default:
 		return nullptr;
-	case 1:
-		*(multiNode->GetNode()->CPPmultinode1) = multimapUnion->CPPmultimap1->find(KeyUchar);
-		break;
-	case 2:
-		*(multiNode->GetNode()->CPPmultinode2) = multimapUnion->CPPmultimap2->find(KeyUchar);
-		break;
-	case 3:
-		*(multiNode->GetNode()->CPPmultinode3) = multimapUnion->CPPmultimap3->find(KeyUchar);
-		break;
-	case 4:
-		*(multiNode->GetNode()->CPPmultinode4) = multimapUnion->CPPmultimap4->find(KeyUchar);
-		break;
-	case 5:
-		*(multiNode->GetNode()->CPPmultinode5) = multimapUnion->CPPmultimap5->find(KeyUchar);
-		break;
-	case 6:
-		*(multiNode->GetNode()->CPPmultinode6) = multimapUnion->CPPmultimap6->find(KeyUchar);
-		break;
-	case 7:
-		*(multiNode->GetNode()->CPPmultinode7) = multimapUnion->CPPmultimap7->find(KeyUchar);
-		break;
-	case 8:
-		*(multiNode->GetNode()->CPPmultinode8) = multimapUnion->CPPmultimap8->find(KeyUchar);
-		break;
-	case 9:
-		*(multiNode->GetNode()->CPPmultinode9) = multimapUnion->CPPmultimap9->find(KeyUchar);
-		break;
-	case 10:
-		*(multiNode->GetNode()->CPPmultinode10) = multimapUnion->CPPmultimap10->find(KeyUchar);
-		break;
-	case 11:
-		*(multiNode->GetNode()->CPPmultinode11) = multimapUnion->CPPmultimap11->find(KeyUchar);
-		break;
-	case 12:
-		*(multiNode->GetNode()->CPPmultinode12) = multimapUnion->CPPmultimap12->find(KeyUchar);
-		break;
-	case 13:
-		*(multiNode->GetNode()->CPPmultinode13) = multimapUnion->CPPmultimap13->find(KeyUchar);
-		break;
-	case 14:
-		*(multiNode->GetNode()->CPPmultinode14) = multimapUnion->CPPmultimap14->find(KeyUchar);
-		break;
-	case 15:
-		*(multiNode->GetNode()->CPPmultinode15) = multimapUnion->CPPmultimap15->find(KeyChar);
-		break;
-	case 16:
-		*(multiNode->GetNode()->CPPmultinode16) = multimapUnion->CPPmultimap16->find(KeyChar);
-		break;
-	case 17:
-		*(multiNode->GetNode()->CPPmultinode17) = multimapUnion->CPPmultimap17->find(KeyChar);
-		break;
-	case 18:
-		*(multiNode->GetNode()->CPPmultinode18) = multimapUnion->CPPmultimap18->find(KeyChar);
-		break;
-	case 19:
-		*(multiNode->GetNode()->CPPmultinode19) = multimapUnion->CPPmultimap19->find(KeyChar);
-		break;
-	case 20:
-		*(multiNode->GetNode()->CPPmultinode20) = multimapUnion->CPPmultimap20->find(KeyChar);
-		break;
-	case 21:
-		*(multiNode->GetNode()->CPPmultinode21) = multimapUnion->CPPmultimap21->find(KeyChar);
-		break;
-	case 22:
-		*(multiNode->GetNode()->CPPmultinode22) = multimapUnion->CPPmultimap22->find(KeyChar);
-		break;
-	case 23:
-		*(multiNode->GetNode()->CPPmultinode23) = multimapUnion->CPPmultimap23->find(KeyChar);
-		break;
-	case 24:
-		*(multiNode->GetNode()->CPPmultinode24) = multimapUnion->CPPmultimap24->find(KeyChar);
-		break;
-	case 25:
-		*(multiNode->GetNode()->CPPmultinode25) = multimapUnion->CPPmultimap25->find(KeyChar);
-		break;
-	case 26:
-		*(multiNode->GetNode()->CPPmultinode26) = multimapUnion->CPPmultimap26->find(KeyChar);
-		break;
-	case 27:
-		*(multiNode->GetNode()->CPPmultinode27) = multimapUnion->CPPmultimap27->find(KeyChar);
-		break;
-	case 28:
-		*(multiNode->GetNode()->CPPmultinode28) = multimapUnion->CPPmultimap28->find(KeyChar);
-		break;
-	case 29:
-		*(multiNode->GetNode()->CPPmultinode29) = multimapUnion->CPPmultimap29->find(KeyShort);
-		break;
-	case 30:
-		*(multiNode->GetNode()->CPPmultinode30) = multimapUnion->CPPmultimap30->find(KeyShort);
-		break;
-	case 31:
-		*(multiNode->GetNode()->CPPmultinode31) = multimapUnion->CPPmultimap31->find(KeyShort);
-		break;
-	case 32:
-		*(multiNode->GetNode()->CPPmultinode32) = multimapUnion->CPPmultimap32->find(KeyShort);
-		break;
-	case 33:
-		*(multiNode->GetNode()->CPPmultinode33) = multimapUnion->CPPmultimap33->find(KeyShort);
-		break;
-	case 34:
-		*(multiNode->GetNode()->CPPmultinode34) = multimapUnion->CPPmultimap34->find(KeyShort);
-		break;
-	case 35:
-		*(multiNode->GetNode()->CPPmultinode35) = multimapUnion->CPPmultimap35->find(KeyShort);
-		break;
-	case 36:
-		*(multiNode->GetNode()->CPPmultinode36) = multimapUnion->CPPmultimap36->find(KeyShort);
-		break;
-	case 37:
-		*(multiNode->GetNode()->CPPmultinode37) = multimapUnion->CPPmultimap37->find(KeyShort);
-		break;
-	case 38:
-		*(multiNode->GetNode()->CPPmultinode38) = multimapUnion->CPPmultimap38->find(KeyShort);
-		break;
-	case 39:
-		*(multiNode->GetNode()->CPPmultinode39) = multimapUnion->CPPmultimap39->find(KeyShort);
-		break;
-	case 40:
-		*(multiNode->GetNode()->CPPmultinode40) = multimapUnion->CPPmultimap40->find(KeyShort);
-		break;
-	case 41:
-		*(multiNode->GetNode()->CPPmultinode41) = multimapUnion->CPPmultimap41->find(KeyShort);
-		break;
-	case 42:
-		*(multiNode->GetNode()->CPPmultinode42) = multimapUnion->CPPmultimap42->find(KeyShort);
-		break;
-	case 43:
-		*(multiNode->GetNode()->CPPmultinode43) = multimapUnion->CPPmultimap43->find(KeyUshort);
-		break;
-	case 44:
-		*(multiNode->GetNode()->CPPmultinode44) = multimapUnion->CPPmultimap44->find(KeyUshort);
-		break;
-	case 45:
-		*(multiNode->GetNode()->CPPmultinode45) = multimapUnion->CPPmultimap45->find(KeyUshort);
-		break;
-	case 46:
-		*(multiNode->GetNode()->CPPmultinode46) = multimapUnion->CPPmultimap46->find(KeyUshort);
-		break;
-	case 47:
-		*(multiNode->GetNode()->CPPmultinode47) = multimapUnion->CPPmultimap47->find(KeyUshort);
-		break;
-	case 48:
-		*(multiNode->GetNode()->CPPmultinode48) = multimapUnion->CPPmultimap48->find(KeyUshort);
-		break;
-	case 49:
-		*(multiNode->GetNode()->CPPmultinode49) = multimapUnion->CPPmultimap49->find(KeyUshort);
-		break;
-	case 50:
-		*(multiNode->GetNode()->CPPmultinode50) = multimapUnion->CPPmultimap50->find(KeyUshort);
-		break;
-	case 51:
-		*(multiNode->GetNode()->CPPmultinode51) = multimapUnion->CPPmultimap51->find(KeyUshort);
-		break;
-	case 52:
-		*(multiNode->GetNode()->CPPmultinode52) = multimapUnion->CPPmultimap52->find(KeyUshort);
-		break;
-	case 53:
-		*(multiNode->GetNode()->CPPmultinode53) = multimapUnion->CPPmultimap53->find(KeyUshort);
-		break;
-	case 54:
-		*(multiNode->GetNode()->CPPmultinode54) = multimapUnion->CPPmultimap54->find(KeyUshort);
-		break;
-	case 55:
-		*(multiNode->GetNode()->CPPmultinode55) = multimapUnion->CPPmultimap55->find(KeyUshort);
-		break;
-	case 56:
-		*(multiNode->GetNode()->CPPmultinode56) = multimapUnion->CPPmultimap56->find(KeyUshort);
-		break;
-	case 57:
-		*(multiNode->GetNode()->CPPmultinode57) = multimapUnion->CPPmultimap57->find(KeyInt);
-		break;
-	case 58:
-		*(multiNode->GetNode()->CPPmultinode58) = multimapUnion->CPPmultimap58->find(KeyInt);
-		break;
-	case 59:
-		*(multiNode->GetNode()->CPPmultinode59) = multimapUnion->CPPmultimap59->find(KeyInt);
-		break;
-	case 60:
-		*(multiNode->GetNode()->CPPmultinode60) = multimapUnion->CPPmultimap60->find(KeyInt);
-		break;
-	case 61:
-		*(multiNode->GetNode()->CPPmultinode61) = multimapUnion->CPPmultimap61->find(KeyInt);
-		break;
-	case 62:
-		*(multiNode->GetNode()->CPPmultinode62) = multimapUnion->CPPmultimap62->find(KeyInt);
-		break;
-	case 63:
-		*(multiNode->GetNode()->CPPmultinode63) = multimapUnion->CPPmultimap63->find(KeyInt);
-		break;
-	case 64:
-		*(multiNode->GetNode()->CPPmultinode64) = multimapUnion->CPPmultimap64->find(KeyInt);
-		break;
-	case 65:
-		*(multiNode->GetNode()->CPPmultinode65) = multimapUnion->CPPmultimap65->find(KeyInt);
-		break;
-	case 66:
-		*(multiNode->GetNode()->CPPmultinode66) = multimapUnion->CPPmultimap66->find(KeyInt);
-		break;
-	case 67:
-		*(multiNode->GetNode()->CPPmultinode67) = multimapUnion->CPPmultimap67->find(KeyInt);
-		break;
-	case 68:
-		*(multiNode->GetNode()->CPPmultinode68) = multimapUnion->CPPmultimap68->find(KeyInt);
-		break;
-	case 69:
-		*(multiNode->GetNode()->CPPmultinode69) = multimapUnion->CPPmultimap69->find(KeyInt);
-		break;
-	case 70:
-		*(multiNode->GetNode()->CPPmultinode70) = multimapUnion->CPPmultimap70->find(KeyInt);
-		break;
-	case 71:
-		*(multiNode->GetNode()->CPPmultinode71) = multimapUnion->CPPmultimap71->find(KeyUint);
-		break;
-	case 72:
-		*(multiNode->GetNode()->CPPmultinode72) = multimapUnion->CPPmultimap72->find(KeyUint);
-		break;
-	case 73:
-		*(multiNode->GetNode()->CPPmultinode73) = multimapUnion->CPPmultimap73->find(KeyUint);
-		break;
-	case 74:
-		*(multiNode->GetNode()->CPPmultinode74) = multimapUnion->CPPmultimap74->find(KeyUint);
-		break;
-	case 75:
-		*(multiNode->GetNode()->CPPmultinode75) = multimapUnion->CPPmultimap75->find(KeyUint);
-		break;
-	case 76:
-		*(multiNode->GetNode()->CPPmultinode76) = multimapUnion->CPPmultimap76->find(KeyUint);
-		break;
-	case 77:
-		*(multiNode->GetNode()->CPPmultinode77) = multimapUnion->CPPmultimap77->find(KeyUint);
-		break;
-	case 78:
-		*(multiNode->GetNode()->CPPmultinode78) = multimapUnion->CPPmultimap78->find(KeyUint);
-		break;
-	case 79:
-		*(multiNode->GetNode()->CPPmultinode79) = multimapUnion->CPPmultimap79->find(KeyUint);
-		break;
-	case 80:
-		*(multiNode->GetNode()->CPPmultinode80) = multimapUnion->CPPmultimap80->find(KeyUint);
-		break;
-	case 81:
-		*(multiNode->GetNode()->CPPmultinode81) = multimapUnion->CPPmultimap81->find(KeyUint);
-		break;
-	case 82:
-		*(multiNode->GetNode()->CPPmultinode82) = multimapUnion->CPPmultimap82->find(KeyUint);
-		break;
-	case 83:
-		*(multiNode->GetNode()->CPPmultinode83) = multimapUnion->CPPmultimap83->find(KeyUint);
-		break;
-	case 84:
-		*(multiNode->GetNode()->CPPmultinode84) = multimapUnion->CPPmultimap84->find(KeyUint);
-		break;
-	case 85:
-		*(multiNode->GetNode()->CPPmultinode85) = multimapUnion->CPPmultimap85->find(KeyLonglong);
-		break;
-	case 86:
-		*(multiNode->GetNode()->CPPmultinode86) = multimapUnion->CPPmultimap86->find(KeyLonglong);
-		break;
-	case 87:
-		*(multiNode->GetNode()->CPPmultinode87) = multimapUnion->CPPmultimap87->find(KeyLonglong);
-		break;
-	case 88:
-		*(multiNode->GetNode()->CPPmultinode88) = multimapUnion->CPPmultimap88->find(KeyLonglong);
-		break;
-	case 89:
-		*(multiNode->GetNode()->CPPmultinode89) = multimapUnion->CPPmultimap89->find(KeyLonglong);
-		break;
-	case 90:
-		*(multiNode->GetNode()->CPPmultinode90) = multimapUnion->CPPmultimap90->find(KeyLonglong);
-		break;
-	case 91:
-		*(multiNode->GetNode()->CPPmultinode91) = multimapUnion->CPPmultimap91->find(KeyLonglong);
-		break;
-	case 92:
-		*(multiNode->GetNode()->CPPmultinode92) = multimapUnion->CPPmultimap92->find(KeyLonglong);
-		break;
-	case 93:
-		*(multiNode->GetNode()->CPPmultinode93) = multimapUnion->CPPmultimap93->find(KeyLonglong);
-		break;
-	case 94:
-		*(multiNode->GetNode()->CPPmultinode94) = multimapUnion->CPPmultimap94->find(KeyLonglong);
-		break;
-	case 95:
-		*(multiNode->GetNode()->CPPmultinode95) = multimapUnion->CPPmultimap95->find(KeyLonglong);
-		break;
-	case 96:
-		*(multiNode->GetNode()->CPPmultinode96) = multimapUnion->CPPmultimap96->find(KeyLonglong);
-		break;
-	case 97:
-		*(multiNode->GetNode()->CPPmultinode97) = multimapUnion->CPPmultimap97->find(KeyLonglong);
-		break;
-	case 98:
-		*(multiNode->GetNode()->CPPmultinode98) = multimapUnion->CPPmultimap98->find(KeyLonglong);
-		break;
-	case 99:
-		*(multiNode->GetNode()->CPPmultinode99) = multimapUnion->CPPmultimap99->find(KeyUlonglong);
-		break;
-	case 100:
-		*(multiNode->GetNode()->CPPmultinode100) = multimapUnion->CPPmultimap100->find(KeyUlonglong);
-		break;
-	case 101:
-		*(multiNode->GetNode()->CPPmultinode101) = multimapUnion->CPPmultimap101->find(KeyUlonglong);
-		break;
-	case 102:
-		*(multiNode->GetNode()->CPPmultinode102) = multimapUnion->CPPmultimap102->find(KeyUlonglong);
-		break;
-	case 103:
-		*(multiNode->GetNode()->CPPmultinode103) = multimapUnion->CPPmultimap103->find(KeyUlonglong);
-		break;
-	case 104:
-		*(multiNode->GetNode()->CPPmultinode104) = multimapUnion->CPPmultimap104->find(KeyUlonglong);
-		break;
-	case 105:
-		*(multiNode->GetNode()->CPPmultinode105) = multimapUnion->CPPmultimap105->find(KeyUlonglong);
-		break;
-	case 106:
-		*(multiNode->GetNode()->CPPmultinode106) = multimapUnion->CPPmultimap106->find(KeyUlonglong);
-		break;
-	case 107:
-		*(multiNode->GetNode()->CPPmultinode107) = multimapUnion->CPPmultimap107->find(KeyUlonglong);
-		break;
-	case 108:
-		*(multiNode->GetNode()->CPPmultinode108) = multimapUnion->CPPmultimap108->find(KeyUlonglong);
-		break;
-	case 109:
-		*(multiNode->GetNode()->CPPmultinode109) = multimapUnion->CPPmultimap109->find(KeyUlonglong);
-		break;
-	case 110:
-		*(multiNode->GetNode()->CPPmultinode110) = multimapUnion->CPPmultimap110->find(KeyUlonglong);
-		break;
-	case 111:
-		*(multiNode->GetNode()->CPPmultinode111) = multimapUnion->CPPmultimap111->find(KeyUlonglong);
-		break;
-	case 112:
-		*(multiNode->GetNode()->CPPmultinode112) = multimapUnion->CPPmultimap112->find(KeyUlonglong);
-		break;
-	case 113:
-		*(multiNode->GetNode()->CPPmultinode113) = multimapUnion->CPPmultimap113->find(KeyFloat);
-		break;
-	case 114:
-		*(multiNode->GetNode()->CPPmultinode114) = multimapUnion->CPPmultimap114->find(KeyFloat);
-		break;
-	case 115:
-		*(multiNode->GetNode()->CPPmultinode115) = multimapUnion->CPPmultimap115->find(KeyFloat);
-		break;
-	case 116:
-		*(multiNode->GetNode()->CPPmultinode116) = multimapUnion->CPPmultimap116->find(KeyFloat);
-		break;
-	case 117:
-		*(multiNode->GetNode()->CPPmultinode117) = multimapUnion->CPPmultimap117->find(KeyFloat);
-		break;
-	case 118:
-		*(multiNode->GetNode()->CPPmultinode118) = multimapUnion->CPPmultimap118->find(KeyFloat);
-		break;
-	case 119:
-		*(multiNode->GetNode()->CPPmultinode119) = multimapUnion->CPPmultimap119->find(KeyFloat);
-		break;
-	case 120:
-		*(multiNode->GetNode()->CPPmultinode120) = multimapUnion->CPPmultimap120->find(KeyFloat);
-		break;
-	case 121:
-		*(multiNode->GetNode()->CPPmultinode121) = multimapUnion->CPPmultimap121->find(KeyFloat);
-		break;
-	case 122:
-		*(multiNode->GetNode()->CPPmultinode122) = multimapUnion->CPPmultimap122->find(KeyFloat);
-		break;
-	case 123:
-		*(multiNode->GetNode()->CPPmultinode123) = multimapUnion->CPPmultimap123->find(KeyFloat);
-		break;
-	case 124:
-		*(multiNode->GetNode()->CPPmultinode124) = multimapUnion->CPPmultimap124->find(KeyFloat);
-		break;
-	case 125:
-		*(multiNode->GetNode()->CPPmultinode125) = multimapUnion->CPPmultimap125->find(KeyFloat);
-		break;
-	case 126:
-		*(multiNode->GetNode()->CPPmultinode126) = multimapUnion->CPPmultimap126->find(KeyFloat);
-		break;
-	case 127:
-		*(multiNode->GetNode()->CPPmultinode127) = multimapUnion->CPPmultimap127->find(KeyDouble);
-		break;
-	case 128:
-		*(multiNode->GetNode()->CPPmultinode128) = multimapUnion->CPPmultimap128->find(KeyDouble);
-		break;
-	case 129:
-		*(multiNode->GetNode()->CPPmultinode129) = multimapUnion->CPPmultimap129->find(KeyDouble);
-		break;
-	case 130:
-		*(multiNode->GetNode()->CPPmultinode130) = multimapUnion->CPPmultimap130->find(KeyDouble);
-		break;
-	case 131:
-		*(multiNode->GetNode()->CPPmultinode131) = multimapUnion->CPPmultimap131->find(KeyDouble);
-		break;
-	case 132:
-		*(multiNode->GetNode()->CPPmultinode132) = multimapUnion->CPPmultimap132->find(KeyDouble);
-		break;
-	case 133:
-		*(multiNode->GetNode()->CPPmultinode133) = multimapUnion->CPPmultimap133->find(KeyDouble);
-		break;
-	case 134:
-		*(multiNode->GetNode()->CPPmultinode134) = multimapUnion->CPPmultimap134->find(KeyDouble);
-		break;
-	case 135:
-		*(multiNode->GetNode()->CPPmultinode135) = multimapUnion->CPPmultimap135->find(KeyDouble);
-		break;
-	case 136:
-		*(multiNode->GetNode()->CPPmultinode136) = multimapUnion->CPPmultimap136->find(KeyDouble);
-		break;
-	case 137:
-		*(multiNode->GetNode()->CPPmultinode137) = multimapUnion->CPPmultimap137->find(KeyDouble);
-		break;
-	case 138:
-		*(multiNode->GetNode()->CPPmultinode138) = multimapUnion->CPPmultimap138->find(KeyDouble);
-		break;
-	case 139:
-		*(multiNode->GetNode()->CPPmultinode139) = multimapUnion->CPPmultimap139->find(KeyDouble);
-		break;
-	case 140:
-		*(multiNode->GetNode()->CPPmultinode140) = multimapUnion->CPPmultimap140->find(KeyDouble);
-		break;
-	case 141:
-		*(multiNode->GetNode()->CPPmultinode141) = multimapUnion->CPPmultimap141->find(KeyWchar);
-		break;
-	case 142:
-		*(multiNode->GetNode()->CPPmultinode142) = multimapUnion->CPPmultimap142->find(KeyWchar);
-		break;
-	case 143:
-		*(multiNode->GetNode()->CPPmultinode143) = multimapUnion->CPPmultimap143->find(KeyWchar);
-		break;
-	case 144:
-		*(multiNode->GetNode()->CPPmultinode144) = multimapUnion->CPPmultimap144->find(KeyWchar);
-		break;
-	case 145:
-		*(multiNode->GetNode()->CPPmultinode145) = multimapUnion->CPPmultimap145->find(KeyWchar);
-		break;
-	case 146:
-		*(multiNode->GetNode()->CPPmultinode146) = multimapUnion->CPPmultimap146->find(KeyWchar);
-		break;
-	case 147:
-		*(multiNode->GetNode()->CPPmultinode147) = multimapUnion->CPPmultimap147->find(KeyWchar);
-		break;
-	case 148:
-		*(multiNode->GetNode()->CPPmultinode148) = multimapUnion->CPPmultimap148->find(KeyWchar);
-		break;
-	case 149:
-		*(multiNode->GetNode()->CPPmultinode149) = multimapUnion->CPPmultimap149->find(KeyWchar);
-		break;
-	case 150:
-		*(multiNode->GetNode()->CPPmultinode150) = multimapUnion->CPPmultimap150->find(KeyWchar);
-		break;
-	case 151:
-		*(multiNode->GetNode()->CPPmultinode151) = multimapUnion->CPPmultimap151->find(KeyWchar);
-		break;
-	case 152:
-		*(multiNode->GetNode()->CPPmultinode152) = multimapUnion->CPPmultimap152->find(KeyWchar);
-		break;
-	case 153:
-		*(multiNode->GetNode()->CPPmultinode153) = multimapUnion->CPPmultimap153->find(KeyWchar);
-		break;
-	case 154:
-		*(multiNode->GetNode()->CPPmultinode154) = multimapUnion->CPPmultimap154->find(KeyWchar);
-		break;
-	case 155:
-		*(multiNode->GetNode()->CPPmultinode155) = multimapUnion->CPPmultimap155->find(KeyBool);
-		break;
-	case 156:
-		*(multiNode->GetNode()->CPPmultinode156) = multimapUnion->CPPmultimap156->find(KeyBool);
-		break;
-	case 157:
-		*(multiNode->GetNode()->CPPmultinode157) = multimapUnion->CPPmultimap157->find(KeyBool);
-		break;
-	case 158:
-		*(multiNode->GetNode()->CPPmultinode158) = multimapUnion->CPPmultimap158->find(KeyBool);
-		break;
-	case 159:
-		*(multiNode->GetNode()->CPPmultinode159) = multimapUnion->CPPmultimap159->find(KeyBool);
-		break;
-	case 160:
-		*(multiNode->GetNode()->CPPmultinode160) = multimapUnion->CPPmultimap160->find(KeyBool);
-		break;
-	case 161:
-		*(multiNode->GetNode()->CPPmultinode161) = multimapUnion->CPPmultimap161->find(KeyBool);
-		break;
-	case 162:
-		*(multiNode->GetNode()->CPPmultinode162) = multimapUnion->CPPmultimap162->find(KeyBool);
-		break;
-	case 163:
-		*(multiNode->GetNode()->CPPmultinode163) = multimapUnion->CPPmultimap163->find(KeyBool);
-		break;
-	case 164:
-		*(multiNode->GetNode()->CPPmultinode164) = multimapUnion->CPPmultimap164->find(KeyBool);
-		break;
-	case 165:
-		*(multiNode->GetNode()->CPPmultinode165) = multimapUnion->CPPmultimap165->find(KeyBool);
-		break;
-	case 166:
-		*(multiNode->GetNode()->CPPmultinode166) = multimapUnion->CPPmultimap166->find(KeyBool);
-		break;
-	case 167:
-		*(multiNode->GetNode()->CPPmultinode167) = multimapUnion->CPPmultimap167->find(KeyBool);
-		break;
-	case 168:
-		*(multiNode->GetNode()->CPPmultinode168) = multimapUnion->CPPmultimap168->find(KeyBool);
-		break;
-	case 169:
-		*(multiNode->GetNode()->CPPmultinode169) = multimapUnion->CPPmultimap169->find(KeyWstring);
-		break;
-	case 170:
-		*(multiNode->GetNode()->CPPmultinode170) = multimapUnion->CPPmultimap170->find(KeyWstring);
-		break;
-	case 171:
-		*(multiNode->GetNode()->CPPmultinode171) = multimapUnion->CPPmultimap171->find(KeyWstring);
-		break;
-	case 172:
-		*(multiNode->GetNode()->CPPmultinode172) = multimapUnion->CPPmultimap172->find(KeyWstring);
-		break;
-	case 173:
-		*(multiNode->GetNode()->CPPmultinode173) = multimapUnion->CPPmultimap173->find(KeyWstring);
-		break;
-	case 174:
-		*(multiNode->GetNode()->CPPmultinode174) = multimapUnion->CPPmultimap174->find(KeyWstring);
-		break;
-	case 175:
-		*(multiNode->GetNode()->CPPmultinode175) = multimapUnion->CPPmultimap175->find(KeyWstring);
-		break;
-	case 176:
-		*(multiNode->GetNode()->CPPmultinode176) = multimapUnion->CPPmultimap176->find(KeyWstring);
-		break;
-	case 177:
-		*(multiNode->GetNode()->CPPmultinode177) = multimapUnion->CPPmultimap177->find(KeyWstring);
-		break;
-	case 178:
-		*(multiNode->GetNode()->CPPmultinode178) = multimapUnion->CPPmultimap178->find(KeyWstring);
-		break;
-	case 179:
-		*(multiNode->GetNode()->CPPmultinode179) = multimapUnion->CPPmultimap179->find(KeyWstring);
-		break;
-	case 180:
-		*(multiNode->GetNode()->CPPmultinode180) = multimapUnion->CPPmultimap180->find(KeyWstring);
-		break;
-	case 181:
-		*(multiNode->GetNode()->CPPmultinode181) = multimapUnion->CPPmultimap181->find(KeyWstring);
-		break;
-	case 182:
-		*(multiNode->GetNode()->CPPmultinode182) = multimapUnion->CPPmultimap182->find(KeyWstring);
-		break;
-	case 183:
-		*(multiNode->GetNode()->CPPmultinode183) = multimapUnion->CPPmultimap183->find(Key__Int);
-		break;
-	case 184:
-		*(multiNode->GetNode()->CPPmultinode184) = multimapUnion->CPPmultimap184->find(Key__Int);
-		break;
-	case 185:
-		*(multiNode->GetNode()->CPPmultinode185) = multimapUnion->CPPmultimap185->find(Key__Int);
-		break;
-	case 186:
-		*(multiNode->GetNode()->CPPmultinode186) = multimapUnion->CPPmultimap186->find(Key__Int);
-		break;
-	case 187:
-		*(multiNode->GetNode()->CPPmultinode187) = multimapUnion->CPPmultimap187->find(Key__Int);
-		break;
-	case 188:
-		*(multiNode->GetNode()->CPPmultinode188) = multimapUnion->CPPmultimap188->find(Key__Int);
-		break;
-	case 189:
-		*(multiNode->GetNode()->CPPmultinode189) = multimapUnion->CPPmultimap189->find(Key__Int);
-		break;
-	case 190:
-		*(multiNode->GetNode()->CPPmultinode190) = multimapUnion->CPPmultimap190->find(Key__Int);
-		break;
-	case 191:
-		*(multiNode->GetNode()->CPPmultinode191) = multimapUnion->CPPmultimap191->find(Key__Int);
-		break;
-	case 192:
-		*(multiNode->GetNode()->CPPmultinode192) = multimapUnion->CPPmultimap192->find(Key__Int);
-		break;
-	case 193:
-		*(multiNode->GetNode()->CPPmultinode193) = multimapUnion->CPPmultimap193->find(Key__Int);
-		break;
-	case 194:
-		*(multiNode->GetNode()->CPPmultinode194) = multimapUnion->CPPmultimap194->find(Key__Int);
-		break;
-	case 195:
-		*(multiNode->GetNode()->CPPmultinode195) = multimapUnion->CPPmultimap195->find(Key__Int);
-		break;
-	case 196:
-		*(multiNode->GetNode()->CPPmultinode196) = multimapUnion->CPPmultimap196->find(Key__Int);
-		break;
+		MultiMap_find_CASE(1, KeyUchar)
+		MultiMap_find_CASE(2, KeyUchar)
+		MultiMap_find_CASE(3, KeyUchar)
+		MultiMap_find_CASE(4, KeyUchar)
+		MultiMap_find_CASE(5, KeyUchar)
+		MultiMap_find_CASE(6, KeyUchar)
+		MultiMap_find_CASE(7, KeyUchar)
+		MultiMap_find_CASE(8, KeyUchar)
+		MultiMap_find_CASE(9, KeyUchar)
+		MultiMap_find_CASE(10, KeyUchar)
+		MultiMap_find_CASE(11, KeyUchar)
+		MultiMap_find_CASE(12, KeyUchar)
+		MultiMap_find_CASE(13, KeyUchar)
+		MultiMap_find_CASE(14, KeyUchar)
+		MultiMap_find_CASE(15, KeyChar)
+		MultiMap_find_CASE(16, KeyChar)
+		MultiMap_find_CASE(17, KeyChar)
+		MultiMap_find_CASE(18, KeyChar)
+		MultiMap_find_CASE(19, KeyChar)
+		MultiMap_find_CASE(20, KeyChar)
+		MultiMap_find_CASE(21, KeyChar)
+		MultiMap_find_CASE(22, KeyChar)
+		MultiMap_find_CASE(23, KeyChar)
+		MultiMap_find_CASE(24, KeyChar)
+		MultiMap_find_CASE(25, KeyChar)
+		MultiMap_find_CASE(26, KeyChar)
+		MultiMap_find_CASE(27, KeyChar)
+		MultiMap_find_CASE(28, KeyChar)
+		MultiMap_find_CASE(29, KeyShort)
+		MultiMap_find_CASE(30, KeyShort)
+		MultiMap_find_CASE(31, KeyShort)
+		MultiMap_find_CASE(32, KeyShort)
+		MultiMap_find_CASE(33, KeyShort)
+		MultiMap_find_CASE(34, KeyShort)
+		MultiMap_find_CASE(35, KeyShort)
+		MultiMap_find_CASE(36, KeyShort)
+		MultiMap_find_CASE(37, KeyShort)
+		MultiMap_find_CASE(38, KeyShort)
+		MultiMap_find_CASE(39, KeyShort)
+		MultiMap_find_CASE(40, KeyShort)
+		MultiMap_find_CASE(41, KeyShort)
+		MultiMap_find_CASE(42, KeyShort)
+		MultiMap_find_CASE(43, KeyUshort)
+		MultiMap_find_CASE(44, KeyUshort)
+		MultiMap_find_CASE(45, KeyUshort)
+		MultiMap_find_CASE(46, KeyUshort)
+		MultiMap_find_CASE(47, KeyUshort)
+		MultiMap_find_CASE(48, KeyUshort)
+		MultiMap_find_CASE(49, KeyUshort)
+		MultiMap_find_CASE(50, KeyUshort)
+		MultiMap_find_CASE(51, KeyUshort)
+		MultiMap_find_CASE(52, KeyUshort)
+		MultiMap_find_CASE(53, KeyUshort)
+		MultiMap_find_CASE(54, KeyUshort)
+		MultiMap_find_CASE(55, KeyUshort)
+		MultiMap_find_CASE(56, KeyUshort)
+		MultiMap_find_CASE(57, KeyInt)
+		MultiMap_find_CASE(58, KeyInt)
+		MultiMap_find_CASE(59, KeyInt)
+		MultiMap_find_CASE(60, KeyInt)
+		MultiMap_find_CASE(61, KeyInt)
+		MultiMap_find_CASE(62, KeyInt)
+		MultiMap_find_CASE(63, KeyInt)
+		MultiMap_find_CASE(64, KeyInt)
+		MultiMap_find_CASE(65, KeyInt)
+		MultiMap_find_CASE(66, KeyInt)
+		MultiMap_find_CASE(67, KeyInt)
+		MultiMap_find_CASE(68, KeyInt)
+		MultiMap_find_CASE(69, KeyInt)
+		MultiMap_find_CASE(70, KeyInt)
+		MultiMap_find_CASE(71, KeyUint)
+		MultiMap_find_CASE(72, KeyUint)
+		MultiMap_find_CASE(73, KeyUint)
+		MultiMap_find_CASE(74, KeyUint)
+		MultiMap_find_CASE(75, KeyUint)
+		MultiMap_find_CASE(76, KeyUint)
+		MultiMap_find_CASE(77, KeyUint)
+		MultiMap_find_CASE(78, KeyUint)
+		MultiMap_find_CASE(79, KeyUint)
+		MultiMap_find_CASE(80, KeyUint)
+		MultiMap_find_CASE(81, KeyUint)
+		MultiMap_find_CASE(82, KeyUint)
+		MultiMap_find_CASE(83, KeyUint)
+		MultiMap_find_CASE(84, KeyUint)
+		MultiMap_find_CASE(85, KeyLonglong)
+		MultiMap_find_CASE(86, KeyLonglong)
+		MultiMap_find_CASE(87, KeyLonglong)
+		MultiMap_find_CASE(88, KeyLonglong)
+		MultiMap_find_CASE(89, KeyLonglong)
+		MultiMap_find_CASE(90, KeyLonglong)
+		MultiMap_find_CASE(91, KeyLonglong)
+		MultiMap_find_CASE(92, KeyLonglong)
+		MultiMap_find_CASE(93, KeyLonglong)
+		MultiMap_find_CASE(94, KeyLonglong)
+		MultiMap_find_CASE(95, KeyLonglong)
+		MultiMap_find_CASE(96, KeyLonglong)
+		MultiMap_find_CASE(97, KeyLonglong)
+		MultiMap_find_CASE(98, KeyLonglong)
+		MultiMap_find_CASE(99, KeyUlonglong)
+		MultiMap_find_CASE(100, KeyUlonglong)
+		MultiMap_find_CASE(101, KeyUlonglong)
+		MultiMap_find_CASE(102, KeyUlonglong)
+		MultiMap_find_CASE(103, KeyUlonglong)
+		MultiMap_find_CASE(104, KeyUlonglong)
+		MultiMap_find_CASE(105, KeyUlonglong)
+		MultiMap_find_CASE(106, KeyUlonglong)
+		MultiMap_find_CASE(107, KeyUlonglong)
+		MultiMap_find_CASE(108, KeyUlonglong)
+		MultiMap_find_CASE(109, KeyUlonglong)
+		MultiMap_find_CASE(110, KeyUlonglong)
+		MultiMap_find_CASE(111, KeyUlonglong)
+		MultiMap_find_CASE(112, KeyUlonglong)
+		MultiMap_find_CASE(113, KeyFloat)
+		MultiMap_find_CASE(114, KeyFloat)
+		MultiMap_find_CASE(115, KeyFloat)
+		MultiMap_find_CASE(116, KeyFloat)
+		MultiMap_find_CASE(117, KeyFloat)
+		MultiMap_find_CASE(118, KeyFloat)
+		MultiMap_find_CASE(119, KeyFloat)
+		MultiMap_find_CASE(120, KeyFloat)
+		MultiMap_find_CASE(121, KeyFloat)
+		MultiMap_find_CASE(122, KeyFloat)
+		MultiMap_find_CASE(123, KeyFloat)
+		MultiMap_find_CASE(124, KeyFloat)
+		MultiMap_find_CASE(125, KeyFloat)
+		MultiMap_find_CASE(126, KeyFloat)
+		MultiMap_find_CASE(127, KeyDouble)
+		MultiMap_find_CASE(128, KeyDouble)
+		MultiMap_find_CASE(129, KeyDouble)
+		MultiMap_find_CASE(130, KeyDouble)
+		MultiMap_find_CASE(131, KeyDouble)
+		MultiMap_find_CASE(132, KeyDouble)
+		MultiMap_find_CASE(133, KeyDouble)
+		MultiMap_find_CASE(134, KeyDouble)
+		MultiMap_find_CASE(135, KeyDouble)
+		MultiMap_find_CASE(136, KeyDouble)
+		MultiMap_find_CASE(137, KeyDouble)
+		MultiMap_find_CASE(138, KeyDouble)
+		MultiMap_find_CASE(139, KeyDouble)
+		MultiMap_find_CASE(140, KeyDouble)
+		MultiMap_find_CASE(141, KeyWchar)
+		MultiMap_find_CASE(142, KeyWchar)
+		MultiMap_find_CASE(143, KeyWchar)
+		MultiMap_find_CASE(144, KeyWchar)
+		MultiMap_find_CASE(145, KeyWchar)
+		MultiMap_find_CASE(146, KeyWchar)
+		MultiMap_find_CASE(147, KeyWchar)
+		MultiMap_find_CASE(148, KeyWchar)
+		MultiMap_find_CASE(149, KeyWchar)
+		MultiMap_find_CASE(150, KeyWchar)
+		MultiMap_find_CASE(151, KeyWchar)
+		MultiMap_find_CASE(152, KeyWchar)
+		MultiMap_find_CASE(153, KeyWchar)
+		MultiMap_find_CASE(154, KeyWchar)
+		MultiMap_find_CASE(155, KeyBool)
+		MultiMap_find_CASE(156, KeyBool)
+		MultiMap_find_CASE(157, KeyBool)
+		MultiMap_find_CASE(158, KeyBool)
+		MultiMap_find_CASE(159, KeyBool)
+		MultiMap_find_CASE(160, KeyBool)
+		MultiMap_find_CASE(161, KeyBool)
+		MultiMap_find_CASE(162, KeyBool)
+		MultiMap_find_CASE(163, KeyBool)
+		MultiMap_find_CASE(164, KeyBool)
+		MultiMap_find_CASE(165, KeyBool)
+		MultiMap_find_CASE(166, KeyBool)
+		MultiMap_find_CASE(167, KeyBool)
+		MultiMap_find_CASE(168, KeyBool)
+		MultiMap_find_CASE(169, KeyWstring)
+		MultiMap_find_CASE(170, KeyWstring)
+		MultiMap_find_CASE(171, KeyWstring)
+		MultiMap_find_CASE(172, KeyWstring)
+		MultiMap_find_CASE(173, KeyWstring)
+		MultiMap_find_CASE(174, KeyWstring)
+		MultiMap_find_CASE(175, KeyWstring)
+		MultiMap_find_CASE(176, KeyWstring)
+		MultiMap_find_CASE(177, KeyWstring)
+		MultiMap_find_CASE(178, KeyWstring)
+		MultiMap_find_CASE(179, KeyWstring)
+		MultiMap_find_CASE(180, KeyWstring)
+		MultiMap_find_CASE(181, KeyWstring)
+		MultiMap_find_CASE(182, KeyWstring)
+		MultiMap_find_CASE(183, Key__Int)
+		MultiMap_find_CASE(184, Key__Int)
+		MultiMap_find_CASE(185, Key__Int)
+		MultiMap_find_CASE(186, Key__Int)
+		MultiMap_find_CASE(187, Key__Int)
+		MultiMap_find_CASE(188, Key__Int)
+		MultiMap_find_CASE(189, Key__Int)
+		MultiMap_find_CASE(190, Key__Int)
+		MultiMap_find_CASE(191, Key__Int)
+		MultiMap_find_CASE(192, Key__Int)
+		MultiMap_find_CASE(193, Key__Int)
+		MultiMap_find_CASE(194, Key__Int)
+		MultiMap_find_CASE(195, Key__Int)
+		MultiMap_find_CASE(196, Key__Int)
 	}
 
 	return multiNode->DeepCopy();
