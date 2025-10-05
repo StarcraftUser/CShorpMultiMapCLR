@@ -30,7 +30,7 @@ I created this project for fun by wrapping `std::multimap` with C++/CLI so it ca
 ## Limitations
 - Not compatible with **Unity**.
 - Can be used in simple scenarios such as a **lottery-style application** in a C# Windows Forms app.
-- Because key/value types must be pre-declared, the codebase became lengthy and repetitive.
+- Since the key and value types had to be declared in advance, the code became lengthy and resulted in verbose, boilerplate code.
 
 ---
 
@@ -70,7 +70,7 @@ C#에는 C++의 `std::multimap` 또는 `std::unordered_multimap`과 같은 컨�
 - **템플릿 ↔ 제네릭 불호환 문제**로 인해 다음과 같은 우회 방식을 사용:
   - 키/값 타입별로 가능한 조합을 미리 선언
   - 제네릭 타입에 따라 해당되는 `std::multimap`을 선택
-- 이 과정에서 **반복적인 선언과 분기 처리**가 필요해 결과적으로 *노가다 코드*가 되었습니다.
+- 이 과정에서 **반복적인 선언과 분기 처리**가 필요해 결과적으로 *노가다 코드*가 됨
 - **메모리 최적화**: 유니온(union) 공용체를 사용하여 불필요한 메모리 낭비 방지
 - **성능 최적화**: `if` 대신 `switch`문 사용
 - **클래스/구조체 처리**: 직접 포인터 저장은 실패 →  
@@ -80,8 +80,8 @@ C#에는 C++의 `std::multimap` 또는 `std::unordered_multimap`과 같은 컨�
 
 ## 제약 사항
 - **Unity와는 호환되지 않음**
-- **Windows Forms 앱** 등에서 간단한 추첨기, 데이터 매핑 등에 활용 가능합니다.
-- 키와 값의 타입을 미리 선언해야 했기 때문에 코드가 길어졌고, 노가다성 반복 코드가 되었습니다.
+- **Windows Forms 앱** 등에서 간단한 추첨기, 데이터 매핑 등에 활용 가능
+- 키와 값의 타입을 미리 선언해야 했기 때문에 코드가 길어졌고, 노가다성 반복 코드가 됨
 
 ---
 
