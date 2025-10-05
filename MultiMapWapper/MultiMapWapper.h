@@ -39,8 +39,8 @@ namespace MultiMapWapper
 		/*virtual*/ Key GetKey();
 		/*virtual*/ void SetValue(Value value);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ DeepCopy();
-		static CShorpMultiNode<Key, Value>^ operator ++(CShorpMultiNode<Key, Value>^ thisObj);
-		static CShorpMultiNode<Key, Value>^ operator --(CShorpMultiNode<Key, Value>^ thisObj);
+		static CShorpMultiNode<Key, Value>^ operator++(CShorpMultiNode<Key, Value>^ thisObj);
+		static CShorpMultiNode<Key, Value>^ operator--(CShorpMultiNode<Key, Value>^ thisObj);
 		//static CShorpMultiNode<Key, Value>^ operator ++(CShorpMultiNode<Key, Value>^ thisObj, int);
 		///*virtual*/ CShorpMultiNode<Key, Value>^ operator++();
 		///*virtual*/ CShorpMultiNode<Key, Value>^ operator++(int);

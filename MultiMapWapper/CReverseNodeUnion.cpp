@@ -75,6 +75,10 @@ MultiMapWapper::CShorpCReverseNode<Key, Value>::CShorpCReverseNode()
 	{
 		KeyNum = 14 * 13;
 	}
+	else if (keyType->IsEnum)
+	{
+		KeyNum = 14 * 13;
+	}
 	else
 	{
 		KeyNum = 200;
@@ -141,6 +145,10 @@ MultiMapWapper::CShorpCReverseNode<Key, Value>::CShorpCReverseNode()
 		ValueNum = 14;
 	}
 	else if (valueType->IsInterface)
+	{
+		ValueNum = 14;
+	}
+	else if (valueType->IsEnum)
 	{
 		ValueNum = 14;
 	}
@@ -2499,8 +2507,6 @@ Key MultiMapWapper::CShorpCReverseNode<Key, Value>::GetKey()
 	if (Object::ReferenceEquals(this, nullptr)) return Key();
 	if (isInitialized == 0) return Key();
 	const System::Object^ managedKey;
-	IntPtr intptr;
-	GCHandle handle;
 	Key objtarget;
 	switch (nKeyValueType)
 	{

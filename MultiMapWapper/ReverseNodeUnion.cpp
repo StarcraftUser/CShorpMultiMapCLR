@@ -75,6 +75,10 @@ MultiMapWapper::CShorpReverseNode<Key, Value>::CShorpReverseNode()
 	{
 		KeyNum = 14 * 13;
 	}
+	else if (keyType->IsEnum)
+	{
+		KeyNum = 14 * 13;
+	}
 	else
 	{
 		KeyNum = 200;
@@ -141,6 +145,10 @@ MultiMapWapper::CShorpReverseNode<Key, Value>::CShorpReverseNode()
 		ValueNum = 14;
 	}
 	else if (valueType->IsInterface)
+	{
+		ValueNum = 14;
+	}
+	else if (valueType->IsEnum)
 	{
 		ValueNum = 14;
 	}

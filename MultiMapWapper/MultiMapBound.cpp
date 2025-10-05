@@ -119,6 +119,14 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 			return nullptr;
 		}
 	}
+	else if (keyType->IsEnum)
+	{
+		if (gKeyClassDictionary->TryGetValue(const_cast<Key>(key), Key__Int));
+		else
+		{
+			return nullptr;
+		}
+	}
 	else
 	{
 		return nullptr;
@@ -431,6 +439,14 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		}
 	}
 	else if (keyType->IsInterface)
+	{
+		if (gKeyClassDictionary->TryGetValue(const_cast<Key>(key), Key__Int));
+		else
+		{
+			return nullptr;
+		}
+	}
+	else if (keyType->IsEnum)
 	{
 		if (gKeyClassDictionary->TryGetValue(const_cast<Key>(key), Key__Int));
 		else

@@ -85,6 +85,11 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		KeyNum = 14 * 13;
 		bgClassKeyDictionaryInit = true;
 	}
+	else if (keyType->IsEnum)
+	{
+		KeyNum = 14 * 13;
+		bgClassKeyDictionaryInit = true;
+	}
 	else
 	{
 		KeyNum = 200;
@@ -153,6 +158,11 @@ MultiMapWapper::CSharpMultiMap<Key, Value>::CSharpMultiMap(MultiMapWapper::CShar
 		bgClassValueDictionaryInit = true;
 	}
 	else if (valueType->IsInterface)
+	{
+		ValueNum = 14;
+		bgClassValueDictionaryInit = true;
+	}
+	else if (valueType->IsEnum)
 	{
 		ValueNum = 14;
 		bgClassValueDictionaryInit = true;
