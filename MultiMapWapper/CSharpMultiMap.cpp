@@ -3180,11 +3180,14 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 }
 
 generic<typename Key, typename Value>
-MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key, Value>::erase(CShorpMultiNode<Key, Value>^ _Where)
+MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key, Value>::erase(CShorpMultiNode<Key, Value>^% _Where)
 {
 	if (Object::ReferenceEquals(_Where, nullptr)) return nullptr;
 	if (nKeyValueType != _Where->GetKVType()) return nullptr;
 	if (_Where->GetInit() == 0) return nullptr;
+
+	auto TempIter = _Where->DeepCopy();
+	TempIter->operator++(TempIter);
 
 	__int64 Key__Int = 0;
 	bool bTempKeyDeleted = false;
@@ -3865,6 +3868,8 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 			}
 		}
 	}
+
+	_Where = TempIter;
 
 	return multiNode->DeepCopy();
 }
@@ -4655,13 +4660,14 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 			}
 		break;
 	case 196:
-		for (auto iter = *(First->GetNode()->CPPmultinode196); iter != *(Last->GetNode()->CPPmultinode196); iter++)
-			TempKeySet.emplace(iter.GetKey());
 		if (gValueClassDictionary)
 		{
 			MultiNode<__int64, __int64> iter;
 			for (iter = *(First->GetNode()->CPPmultinode196); iter != *(Last->GetNode()->CPPmultinode196); iter++)
+			{
+				TempKeySet.emplace(iter.GetKey());
 				gValueClassDictionary->Remove(iter.GetValue());
+			}
 		}
 		*(multiNode->GetNode()->CPPmultinode196) = multimapUnion->CPPmultimap196->erase(*(First->GetNode()->CPPmultinode196), *(Last->GetNode()->CPPmultinode196));
 		for (auto i : TempKeySet)
@@ -4691,11 +4697,14 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 }
 
 generic<typename Key, typename Value>
-MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key, Value>::erase(CShorpMultiConstNode<Key, Value>^ _Where)
+MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key, Value>::erase(CShorpMultiConstNode<Key, Value>^% _Where)
 {
 	if (Object::ReferenceEquals(_Where, nullptr)) return nullptr;
 	if (nKeyValueType != _Where->GetKVType()) return nullptr;
 	if (_Where->GetInit() == 0) return nullptr;
+
+	auto TempIter = _Where->DeepCopy();
+	TempIter->operator++(TempIter);
 
 	__int64 Key__Int = 0;
 	bool bTempKeyDeleted = false;
@@ -5376,6 +5385,8 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 			}
 		}
 	}
+
+	_Where = TempIter;
 
 	return multiNode->DeepCopy();
 }
@@ -6166,13 +6177,14 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 			}
 		break;
 	case 196:
-		for (auto iter = *(First->GetNode()->CPPmulticonstnode196); iter != *(Last->GetNode()->CPPmulticonstnode196); iter++)
-			TempKeySet.emplace(iter.GetKey());
 		if (gValueClassDictionary)
 		{
 			MultiConstNode<__int64, __int64> iter;
 			for (iter = *(First->GetNode()->CPPmulticonstnode196); iter != *(Last->GetNode()->CPPmulticonstnode196); iter++)
+			{
+				TempKeySet.emplace(iter.GetKey());
 				gValueClassDictionary->Remove(iter.GetValue());
+			}
 		}
 		*(multiNode->GetNode()->CPPmultinode196) = multimapUnion->CPPmultimap196->erase(*(First->GetNode()->CPPmulticonstnode196), *(Last->GetNode()->CPPmulticonstnode196));
 		for (auto i : TempKeySet)

@@ -47,6 +47,14 @@ I hope this project can be refined into better code through community contributi
 
 ---
 
+## Usage
+For detailed usage instructions, please refer to the following:
+
+- https://github.com/StarcraftUser/TestingMultimapsX64
+- https://github.com/StarcraftUser/TestingMultimapsX86
+
+---
+
 ==============================================
 
 ---
@@ -95,3 +103,12 @@ C#에는 C++의 `std::multimap` 또는 `std::unordered_multimap`과 같은 컨�
 ## 기여
 잘못된 부분이나 더 나은 아이디어가 있다면 자유롭게 알려주세요.  
 더 많은 분들의 손을 거쳐 발전되기를 기대합니다.
+
+---
+
+## 사용법
+자세한 사용 방법은 아래 링크를 참고하세요:
+
+- https://github.com/StarcraftUser/TestingMultimapsX64
+- https://github.com/StarcraftUser/TestingMultimapsX86
+

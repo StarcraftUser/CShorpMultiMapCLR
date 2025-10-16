@@ -39,8 +39,8 @@ namespace MultiMapWapper
 		/*virtual*/ Key GetKey();
 		/*virtual*/ void SetValue(Value value);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ DeepCopy();
-		static CShorpMultiNode<Key, Value>^ operator++(CShorpMultiNode<Key, Value>^ thisObj);
-		static CShorpMultiNode<Key, Value>^ operator--(CShorpMultiNode<Key, Value>^ thisObj);
+		static CShorpMultiNode<Key, Value>^ operator ++(CShorpMultiNode<Key, Value>^ thisObj);
+		static CShorpMultiNode<Key, Value>^ operator --(CShorpMultiNode<Key, Value>^ thisObj);
 		//static CShorpMultiNode<Key, Value>^ operator ++(CShorpMultiNode<Key, Value>^ thisObj, int);
 		///*virtual*/ CShorpMultiNode<Key, Value>^ operator++();
 		///*virtual*/ CShorpMultiNode<Key, Value>^ operator++(int);
@@ -209,9 +209,9 @@ namespace MultiMapWapper
 		/*virtual*/ CShorpMultiNode<Key, Value>^ endCopy();
 		/*virtual*/ CShorpMultiNode<Key, Value>^ KeyEnd();
 		/*virtual*/ CShorpMultiNode<Key, Value>^ KeyEndCopy();
-		/*virtual*/ CShorpMultiNode<Key, Value>^ erase(CShorpMultiNode<Key, Value>^ _Where);
+		/*virtual*/ CShorpMultiNode<Key, Value>^ erase(CShorpMultiNode<Key, Value>^% _Where);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ erase(CShorpMultiNode<Key, Value>^ First, CShorpMultiNode<Key, Value>^ Last);
-		/*virtual*/ CShorpMultiNode<Key, Value>^ erase(CShorpMultiConstNode<Key, Value>^ _Where);
+		/*virtual*/ CShorpMultiNode<Key, Value>^ erase(CShorpMultiConstNode<Key, Value>^% _Where);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ erase(CShorpMultiConstNode<Key, Value>^ First, CShorpMultiConstNode<Key, Value>^ Last);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ equal_range(const Key key);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ insert(Key key, Value value);
