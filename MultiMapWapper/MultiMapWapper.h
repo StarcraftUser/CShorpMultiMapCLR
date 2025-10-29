@@ -199,6 +199,7 @@ namespace MultiMapWapper
 		/*virtual*/ ~CSharpMultiMap();
 		/*virtual*/ void clear();
 		/*virtual*/ CShorpMultiNode<Key, Value>^ emplace(Key key, Value value);
+		/*virtual*/ CShorpMultiNode<Key, Value>^ emplace(System::Collections::Generic::KeyValuePair<Key, Value>^ Pair);
 		/*virtual*/ System::UInt64 size();
 		/*virtual*/ System::UInt64 count(const Key key);
 		/*virtual*/ System::UInt64 erase(const Key key);
@@ -215,6 +216,7 @@ namespace MultiMapWapper
 		/*virtual*/ CShorpMultiNode<Key, Value>^ erase(CShorpMultiConstNode<Key, Value>^ First, CShorpMultiConstNode<Key, Value>^ Last);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ equal_range(const Key key);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ insert(Key key, Value value);
+		/*virtual*/ CShorpMultiNode<Key, Value>^ insert(System::Collections::Generic::KeyValuePair<Key, Value>^ Pair);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ insert(CShorpMultiNode<Key, Value>^ _Where, Key key, Value value);
 		/*virtual*/ CShorpMultiNode<Key, Value>^ insert(CShorpMultiConstNode<Key, Value>^ _Where, Key key, Value value);
 		/*virtual*/ CShorpMultiConstNode<Key, Value>^ cbegin();

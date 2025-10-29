@@ -1095,6 +1095,13 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	return multiNode->DeepCopy();
 }
 
+generic<typename Key, typename Value>
+MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key, Value>::emplace(System::Collections::Generic::KeyValuePair<Key, Value>^ Pair)
+{
+	if (Object::ReferenceEquals(Pair, nullptr)) return nullptr;
+	return emplace(Pair->Key, Pair->Value);
+}
+
 #define MultiMap_Size_CASE(NUM) \
 	case NUM: \
 		return static_cast<System::UInt64>(multimapUnion->CPPmultimap##NUM->size());
@@ -3186,8 +3193,6 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	if (nKeyValueType != _Where->GetKVType()) return nullptr;
 	if (_Where->GetInit() == 0) return nullptr;
 
-	auto TempIter = _Where->DeepCopy();
-	TempIter->operator++(TempIter);
 
 	__int64 Key__Int = 0;
 	bool bTempKeyDeleted = false;
@@ -3869,9 +3874,8 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		}
 	}
 
-	_Where = TempIter;
 
-	return multiNode->DeepCopy();
+	return _Where = multiNode->DeepCopy();
 }
 
 generic<typename Key, typename Value>
@@ -4704,7 +4708,7 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 	if (_Where->GetInit() == 0) return nullptr;
 
 	auto TempIter = _Where->DeepCopy();
-	TempIter->operator++(TempIter);
+	TempIter = MultiMapWapper::CShorpMultiConstNode<Key, Value>::operator++(TempIter);
 
 	__int64 Key__Int = 0;
 	bool bTempKeyDeleted = false;
@@ -7968,6 +7972,13 @@ MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key,
 		break;
 	}
 	return multiNode->DeepCopy();
+}
+
+generic<typename Key, typename Value>
+MultiMapWapper::CShorpMultiNode<Key, Value>^ MultiMapWapper::CSharpMultiMap<Key, Value>::insert(System::Collections::Generic::KeyValuePair<Key, Value>^ Pair)
+{
+	if (Object::ReferenceEquals(Pair, nullptr)) return nullptr;
+	return insert(Pair->Key, Pair->Value);
 }
 
 generic<typename Key, typename Value>
